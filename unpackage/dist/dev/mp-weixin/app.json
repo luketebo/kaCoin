@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/sort/sort",
+    "pages/order/order",
+    "pages/ceamera/ceamera"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#015FF9",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/static/icon/kaCoin-tabBar-no-select/shouye.png",
+        "selectedIconPath": "/static/icon/kaCoin-tabBar-selected/shouye.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/sort/sort",
+        "iconPath": "/static/icon/kaCoin-tabBar-no-select/fenlei.png",
+        "selectedIconPath": "/static/icon/kaCoin-tabBar-selected/fenlei.png"
+      },
+      {
+        "text": "订单",
+        "pagePath": "pages/order/order",
+        "iconPath": "/static/icon/kaCoin-tabBar-no-select/gouwu.png",
+        "selectedIconPath": "/static/icon/kaCoin-tabBar-selected/gouwu.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/home/home",
+        "iconPath": "/static/icon/kaCoin-tabBar-no-select/tuandui.png",
+        "selectedIconPath": "/static/icon/kaCoin-tabBar-selected/tuandui.png"
+      },
+      {
+        "text": "拍照",
+        "pagePath": "pages/ceamera/ceamera"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

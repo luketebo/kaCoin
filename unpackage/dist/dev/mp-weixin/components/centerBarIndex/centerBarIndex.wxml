@@ -1,0 +1,1 @@
+<view class="centerBar"><scroll-view class="centerScroll" scroll-x="true"><view wx:for="{{a}}" wx:for-item="item" class="item">{{item.a}}</view></scroll-view></view>

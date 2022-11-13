@@ -1,13 +1,13 @@
 <template>
 	<view class="card">
 		<view class="top">
-			<image src="@/static/image/1.jpg" mode="aspectFill"></image>
+			<image src="@/static/image/paigu.jpg" mode="aspectFill"></image>
 		</view>
-		<text class="center">评论</text>
+		<text class="center">很美味，很好恰</text>
 		<view class="bottom">
 			<view class="left">
 				<view class="avatar">
-					<image src="@/static/image/1.jpg" mode="aspectFill"></image>
+					<image src="@/static/image/demo.jpg" mode="aspectFill"></image>
 				</view>
 				<view class="name">十月</view>
 			</view>
@@ -16,24 +16,22 @@
 					<image src="@/static/icon/kaCoin-like-index/like.png" v-if="!likes"></image>
 					<image src="@/static/icon/kaCoin-like-index/like-h.png" v-else></image>
 				</view>
-				<text class="number" @click.native="onClickLike">123</text>
+				<text class="number" @click.native="onClickLike">{{likeNum}}</text>
 			</view>
 		</view>
 	</view>
 </template>
 
-<script setup lang="ts">
+<script setup>
 	import {
 		ref
 	} from 'vue'
-	let likes = ref < Boolean > (true)
-	let likeNum = ref < Number > (1)
+	let likes = ref(true)
+	let likeNum = ref(1)
 
 	const onClickLike = () => {
-		likes = !likes
-		likeNum++
-		console.log(likes)
-		console.log(likeNum)
+		likes.value = !likes.value
+		likeNum.value++
 	}
 </script>
 
@@ -60,14 +58,14 @@
 
 		.center {
 			height: 80rpx;
-			padding: 25rpx;
+			padding: 10rpx;
 			font-weight: bold;
 			// font-size: 25rpx;
 		}
 
 		.bottom {
 			display: flex;
-			padding: 2rpx 25rpx;
+			padding: 2rpx 10rpx;
 			justify-content: space-between;
 
 			.left {
@@ -112,6 +110,7 @@
 				.number {
 					font-size: #888;
 					padding-left: 5rpx;
+					padding-top: 8rpx;
 					// font-weight: bold;
 				}
 			}

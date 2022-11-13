@@ -43,12 +43,12 @@
 }
 .card .center {
   height: 80rpx;
-  padding: 25rpx;
+  padding: 10rpx;
   font-weight: bold;
 }
 .card .bottom {
   display: flex;
-  padding: 2rpx 25rpx;
+  padding: 2rpx 10rpx;
   justify-content: space-between;
 }
 .card .bottom .left {
@@ -86,4 +86,5 @@
 .card .bottom .like .number {
   font-size: #888;
   padding-left: 5rpx;
+  padding-top: 8rpx;
 }

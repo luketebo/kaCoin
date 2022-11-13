@@ -33,6 +33,14 @@
   height: inherit;
   white-space: nowrap;
 }
+.swiperBar .scrollBar.data-v-5e6c9664 ::-webkit-scrollbar {
+  width: 4px !important;
+  height: 1px !important;
+  overflow: auto !important;
+  background: transparent !important;
+  -webkit-appearance: auto !important;
+  display: block;
+}
 .swiperBar .scrollBar .item.data-v-5e6c9664 {
   height: inherit;
   width: 150rpx;
@@ -40,15 +48,39 @@
 }
 .swiperBar .scrollBar .item .top.data-v-5e6c9664 {
   height: 110rpx;
-  border: 1rpx solid red;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.swiperBar .scrollBar .item .top .pic.data-v-5e6c9664 {
+  height: 55rpx;
+  width: 55rpx;
+}
+.swiperBar .scrollBar .item .top .pic image.data-v-5e6c9664 {
+  height: 100%;
+  width: 100%;
+}
+.swiperBar .scrollBar .item .top text.data-v-5e6c9664 {
+  font-size: 25rpx;
+  font-weight: bold;
+}
 .swiperBar .scrollBar .item .bottom.data-v-5e6c9664 {
   height: 110rpx;
-  border: 1rpx solid red;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.swiperBar .scrollBar .item .bottom .pic.data-v-5e6c9664 {
+  height: 55rpx;
+  width: 55rpx;
+}
+.swiperBar .scrollBar .item .bottom .pic image.data-v-5e6c9664 {
+  height: 100%;
+  width: 100%;
+}
+.swiperBar .scrollBar .item .bottom text.data-v-5e6c9664 {
+  font-size: 25rpx;
+  font-weight: bold;
 }

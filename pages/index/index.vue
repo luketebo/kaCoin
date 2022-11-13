@@ -20,7 +20,7 @@
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.contentCard {
 		display: grid;
 		grid-template-columns: auto auto;

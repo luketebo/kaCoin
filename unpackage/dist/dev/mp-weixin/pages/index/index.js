@@ -19,10 +19,10 @@ function _sfc_render(_ctx, _cache) {
   return {
     a: common_vendor.f(20, (item, k0, i0) => {
       return {
-        a: "507fa22e-3-" + i0
+        a: "57280228-3-" + i0
       };
     })
   };
 }
-var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "D:/Code-repository/Hbuilder/kaCoin/pages/index/index.vue"]]);
+var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-57280228"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/pages/index/index.vue"]]);
 wx.createPage(MiniProgramPage);

@@ -24,18 +24,46 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.centerBar {
+.centerBar.data-v-330230c4 {
   height: 80rpx;
-  margin: 25rpx 15rpx;
+  line-height: 80rpx;
+  margin: 23rpx 15rpx;
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--window-top);
+  left: 0rpx;
+  right: 0rpx;
+  z-index: 100;
+  background-color: white;
 }
-.centerBar .centerScroll {
+.centerBar .centerScroll.data-v-330230c4 {
   height: inherit;
   white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.centerBar .centerScroll .item {
+.centerBar .centerScroll.data-v-330230c4 ::-webkit-scrollbar {
+  width: 4px !important;
+  height: 1px !important;
+  overflow: auto !important;
+  background: transparent !important;
+  -webkit-appearance: auto !important;
+  display: block;
+}
+.centerBar .centerScroll .item.data-v-330230c4 {
   display: inline-block;
-  border: 1rpx solid red;
   height: 80rpx;
   width: 100rpx;
+  font-weight: bold;
+  font-size: 25rpx;
+  line-height: 80rpx;
   text-align: center;
+}
+.centerBar .centerScroll .active.data-v-330230c4 {
+  -webkit-text-decoration: underline 9rpx;
+          text-decoration: underline 9rpx;
+  -webkit-text-decoration-color: #fe5d2a;
+          text-decoration-color: #fe5d2a;
+  font-size: 35rpx;
 }

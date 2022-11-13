@@ -7,22 +7,21 @@ const _sfc_main = {
     let likes = common_vendor.ref(true);
     let likeNum = common_vendor.ref(1);
     const onClickLike = () => {
-      likes = !likes;
-      likeNum++;
-      console.log(likes);
-      console.log(likeNum);
+      likes.value = !likes.value;
+      likeNum.value++;
     };
     return (_ctx, _cache) => {
       return common_vendor.e({
         a: common_assets._imports_0,
-        b: common_assets._imports_0,
+        b: common_assets._imports_1,
         c: !common_vendor.unref(likes)
       }, !common_vendor.unref(likes) ? {
-        d: common_assets._imports_1
+        d: common_assets._imports_2
       } : {
-        e: common_assets._imports_2
+        e: common_assets._imports_3
       }, {
-        f: common_vendor.o(onClickLike)
+        f: common_vendor.t(common_vendor.unref(likeNum)),
+        g: common_vendor.o(onClickLike)
       });
     };
   }

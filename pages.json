@@ -9,28 +9,36 @@
 		{
 			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "个人中心",
 				"enablePullDownRefresh": false
 			}
 
 		},
 		{
-			"path": "pages/sort/sort",
+			"path": "pages/map/map",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "地图",
 				"enablePullDownRefresh": false
 			}
 
 		},
 		{
-			"path": "pages/order/order",
+			"path": "pages/start/start",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "收藏",
 				"enablePullDownRefresh": false
 			}
 
 		}
 
+		, {
+			"path": "pages/submit/submit",
+			"style": {
+				"navigationBarTitleText": "发布",
+				"enablePullDownRefresh": false
+			}
+
+		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -40,29 +48,37 @@
 	},
 	"tabBar": {
 		"color": "#333",
-		"selectedColor": "#015FF9",
+		"selectedColor": "#fe5d2a",
 		"list": [{
 				"text": "首页",
 				"pagePath": "pages/index/index",
-				"iconPath": "/static/icon/kaCoin-tabBar-no-select/shouye.png",
-				"selectedIconPath": "/static/icon/kaCoin-tabBar-selected/shouye.png"
+				"iconPath": "/static/icon/kaCoin-tabBar-no-select/index.png",
+				"selectedIconPath": "/static/icon/kaCoin-tabBar-selected/index.png"
 			},
 			{
-				"text": "分类",
-				"pagePath": "pages/sort/sort",
-				"iconPath": "/static/icon/kaCoin-tabBar-no-select/fenlei.png",
-				"selectedIconPath": "/static/icon/kaCoin-tabBar-selected/fenlei.png"
-			}, {
-				"text": "订单",
-				"pagePath": "pages/order/order",
-				"iconPath": "/static/icon/kaCoin-tabBar-no-select/gouwu.png",
-				"selectedIconPath": "/static/icon/kaCoin-tabBar-selected/gouwu.png"
+				"text": "地图",
+				"pagePath": "pages/map/map",
+				"iconPath": "/static/icon/kaCoin-tabBar-no-select/map.png",
+				"selectedIconPath": "/static/icon/kaCoin-tabBar-selected/map.png"
+			},
+			{
+				"text": "发布",
+				"pagePath": "pages/submit/submit",
+				"iconPath": "/static/icon/kaCoin-tabBar-no-select/add.png",
+				"selectedIconPath": "static/icon/kaCoin-tabBar-selected/add.png",
+				"midButton": true
+			},
+			{
+				"text": "收藏",
+				"pagePath": "pages/start/start",
+				"iconPath": "/static/icon/kaCoin-tabBar-no-select/start.png",
+				"selectedIconPath": "/static/icon/kaCoin-tabBar-selected/start.png"
 			},
 			{
 				"text": "我的",
 				"pagePath": "pages/home/home",
-				"iconPath": "/static/icon/kaCoin-tabBar-no-select/tuandui.png",
-				"selectedIconPath": "/static/icon/kaCoin-tabBar-selected/tuandui.png"
+				"iconPath": "/static/icon/kaCoin-tabBar-no-select/home.png",
+				"selectedIconPath": "/static/icon/kaCoin-tabBar-selected/home.png"
 			}
 		]
 	},

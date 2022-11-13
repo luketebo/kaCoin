@@ -1,1 +1,1 @@
-<view class="centerBar"><scroll-view class="centerScroll" scroll-x="true"><view wx:for="{{a}}" wx:for-item="item" class="item">{{item.a}}</view></scroll-view></view>
+<view class="centerBar data-v-330230c4"><scroll-view class="centerScroll data-v-330230c4" scroll-x="true"><view wx:for="{{a}}" wx:for-item="item" wx:key="d" class="{{['item', 'data-v-330230c4', item.b]}}" bindtap="{{item.c}}">{{item.a}}</view></scroll-view></view>

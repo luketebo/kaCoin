@@ -31,9 +31,9 @@ require("./uni_modules/vk-uview-ui/libs/config/zIndex.js");
 if (!Math) {
   "./pages/index/index.js";
   "./pages/home/home.js";
-  "./pages/sort/sort.js";
-  "./pages/order/order.js";
-  "./pages/ceamera/ceamera.js";
+  "./pages/map/map.js";
+  "./pages/start/start.js";
+  "./pages/submit/submit.js";
 }
 const _sfc_main = {
   onLaunch: function() {

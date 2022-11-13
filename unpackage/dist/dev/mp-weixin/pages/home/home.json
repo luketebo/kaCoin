@@ -1,5 +1,9 @@
 {
-  "navigationBarTitleText": "",
+  "navigationBarTitleText": "个人中心",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "top-card-home": "../../components/topCardHome/topCardHome",
+    "content-card-home": "../../components/contentCardHome/contentCardHome",
+    "content-index": "../../components/contentIndex/contentIndex"
+  }
 }

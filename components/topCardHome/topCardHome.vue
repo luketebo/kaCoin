@@ -64,13 +64,11 @@
 			width: 100%;
 			// padding: 5rpx 15rpx;
 			// border: 1px solid red;
-			margin-bottom: 23rpx;
+			margin-bottom: 15rpx;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-around;
 			// background-image: linear-gradient(120deg, #f6d365 5%, #fda085 80%);
-			// filter: blur(50px);
-			// z-index: 1;
 
 			.first {
 				height: 128rpx;
@@ -97,7 +95,6 @@
 
 					text {
 						padding: 5rpx;
-						// color: white;
 
 					}
 				}

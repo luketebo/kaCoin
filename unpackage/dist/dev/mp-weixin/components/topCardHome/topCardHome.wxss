@@ -31,7 +31,7 @@
 .topCard .top.data-v-4a08a18e {
   height: 280rpx;
   width: 100%;
-  margin-bottom: 23rpx;
+  margin-bottom: 15rpx;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

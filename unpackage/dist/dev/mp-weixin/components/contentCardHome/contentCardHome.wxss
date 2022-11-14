@@ -24,8 +24,56 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.contentCard {
-  margin: 5rpx 15rpx;
+.contentCardHome.data-v-69b5f754 {
   height: 200rpx;
-  border: 1rpx solid red;
+  width: 100%;
+}
+.contentCardHome .homeCard.data-v-69b5f754 {
+  margin: 0rpx 15rpx;
+  background-color: white;
+  border-radius: 5rpx;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.contentCardHome .homeCard .item.data-v-69b5f754 {
+  height: 100%;
+  width: 150rpx;
+}
+.contentCardHome .homeCard .item .topCenter.data-v-69b5f754 {
+  height: 98rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentCardHome .homeCard .item .topCenter .picImg.data-v-69b5f754 {
+  height: 55rpx;
+  width: 55rpx;
+}
+.contentCardHome .homeCard .item .topCenter .picImg image.data-v-69b5f754 {
+  height: 100%;
+  width: 100%;
+}
+.contentCardHome .homeCard .item .topCenter text.data-v-69b5f754 {
+  font-size: 25rpx;
+  font-weight: bold;
+}
+.contentCardHome .homeCard .item .bottom.data-v-69b5f754 {
+  height: 98rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentCardHome .homeCard .item .bottom .pic.data-v-69b5f754 {
+  height: 55rpx;
+  width: 55rpx;
+}
+.contentCardHome .homeCard .item .bottom .pic image.data-v-69b5f754 {
+  height: 100%;
+  width: 100%;
+}
+.contentCardHome .homeCard .item .bottom text.data-v-69b5f754 {
+  font-size: 25rpx;
+  font-weight: bold;
 }

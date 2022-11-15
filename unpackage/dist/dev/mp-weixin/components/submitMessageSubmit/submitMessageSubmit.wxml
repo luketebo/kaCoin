@@ -1,0 +1,1 @@
+<view class="submitMessage"><view class="submitMessage-pic"> 图片 </view><view class="submitMessage-title"> title </view><view class="submitMessage-content"> content </view></view>

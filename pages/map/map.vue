@@ -1,8 +1,6 @@
 <template>
 	<view>
-		<map :scale="scale" style="width: 100%; height: 100%;" enable-3D="false" show-compass="false"
-			enable-overlooking="false" :enable-satellite="false" :enable-traffic="false" show-location="false"
-			:latitude="latitude" :longitude="longitude" :markers="covers">
+		<map style="width: 750rpx; height: 100vh;">
 		</map>
 	</view>
 </template>

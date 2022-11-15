@@ -1,0 +1,4 @@
+.submitMessage {
+  height: 750rpx;
+  width: 750rpx;
+}

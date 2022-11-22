@@ -24,25 +24,40 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.topBar.data-v-68ae1b24 {
-  padding-top: 25rpx;
-  /* height: 35rpx; */
-  display: flex;
-  justify-content: space-between;
+.u-progress.data-v-2ba456a9 {
+  overflow: hidden;
+  height: 15px;
+  display: inline-flex;
   align-items: center;
-  padding-bottom: 25rpx;
-  margin: 0rpx 35rpx;
-}
-.topBar .left.data-v-68ae1b24 {
-  font-weight: bold;
-  /* margin-left: 35rpx; */
-}
-.topBar .right.data-v-68ae1b24 {
-  height: 50rpx;
-  width: 50rpx;
-  /* margin-right: 55rpx; */
-}
-.topBar .right image.data-v-68ae1b24 {
   width: 100%;
+  border-radius: 100rpx;
+}
+.u-active.data-v-2ba456a9 {
+  width: 0;
   height: 100%;
+  align-items: center;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-items: flex-end;
+  justify-content: space-around;
+  font-size: 20rpx;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+.u-striped.data-v-2ba456a9 {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 39px 39px;
+}
+.u-striped-active.data-v-2ba456a9 {
+  animation: progress-stripes-2ba456a9 2s linear infinite;
+}
+@keyframes progress-stripes-2ba456a9 {
+0% {
+    background-position: 0 0;
+}
+100% {
+    background-position: 39px 0;
+}
 }

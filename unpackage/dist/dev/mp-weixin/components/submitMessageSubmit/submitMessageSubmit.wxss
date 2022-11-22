@@ -1,4 +1,27 @@
 .submitMessage {
-  height: 750rpx;
+  height: 100%;
   width: 750rpx;
+  background-color: white;
+}
+.submitMessage-package {
+  padding: 0 15rpx;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.submitMessage-package-form {
+  margin: 0 0 15rpx 0;
+}
+.submitMessage-package-btn {
+  display: flex;
+}
+.submitMessage-package-btn-rought {
+  display: inline-block;
+  margin: 0 15rpx;
+}
+.submitMessage-package-btn-submit {
+  flex: 1;
+  display: inline-block;
 }

@@ -3,12 +3,12 @@
 		<view class="submit-top">
 			<submitMessageSubmit></submitMessageSubmit>
 		</view>
-		<view class="submit-center">
+		<!-- <view class="submit-center">
 
 		</view>
 		<view class="submit-bottom">
 
-		</view>
+		</view> -->
 	</view>
 </template>
 
@@ -25,5 +25,10 @@
 <style lang="less" scoped>
 	.submit {
 		background-color: #e8e8e8;
+		height: 100%;
+
+		&-top {
+			height: 100%;
+		}
 	}
 </style>

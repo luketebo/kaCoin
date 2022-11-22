@@ -17,6 +17,7 @@
 	const scanCode = () => {
 		uni.scanCode({
 			success: (res) => {
+
 				console.log(JSON.stringify(res.result))
 			}
 		})
@@ -31,7 +32,7 @@
 		justify-content: space-between;
 		align-items: center;
 		padding-bottom: 25rpx;
-		margin: 0rpx 15rpx;
+		margin: 0rpx 35rpx;
 
 		.left {
 			font-weight: bold;

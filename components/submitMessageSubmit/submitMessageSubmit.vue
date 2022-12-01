@@ -97,7 +97,7 @@
 			}
 
 			&-btn {
-
+				margin-top: 460rpx;
 				display: flex;
 
 				&-rought {

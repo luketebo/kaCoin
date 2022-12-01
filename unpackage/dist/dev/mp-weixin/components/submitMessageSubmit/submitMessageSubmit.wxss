@@ -15,6 +15,7 @@
   margin: 0 0 15rpx 0;
 }
 .submitMessage-package-btn {
+  margin-top: 460rpx;
   display: flex;
 }
 .submitMessage-package-btn-rought {

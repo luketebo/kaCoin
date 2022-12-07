@@ -6,6 +6,14 @@ const _sfc_main = {
   },
   methods: {}
 };
+if (!Array) {
+  const _easycom_startTopBar2 = common_vendor.resolveComponent("startTopBar");
+  _easycom_startTopBar2();
+}
+const _easycom_startTopBar = () => "../../components/startTopBar/startTopBar.js";
+if (!Math) {
+  _easycom_startTopBar();
+}
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {};
 }

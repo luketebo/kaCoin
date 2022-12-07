@@ -10,7 +10,6 @@
 			<centerBarIndex></centerBarIndex>
 			<view class="contentCard">
 				<contentIndex v-for="item in 20"></contentIndex>
-
 			</view>
 		</view>
 	</view>

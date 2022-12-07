@@ -8,9 +8,8 @@
 				<contentCardHome></contentCardHome>
 			</view>
 		</view>
+		<u-divider color="black">你可能还喜欢</u-divider>
 		<view class="footer">
-			<text>-------你可能还喜欢---------</text>
-
 			<view class="contentCard">
 				<contentIndex v-for="item in 20"></contentIndex>
 			</view>

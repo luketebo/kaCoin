@@ -4,6 +4,7 @@
   "usingComponents": {
     "top-card-home": "../../components/topCardHome/topCardHome",
     "content-card-home": "../../components/contentCardHome/contentCardHome",
+    "u-divider": "../../uni_modules/vk-uview-ui/components/u-divider/u-divider",
     "content-index": "../../components/contentIndex/contentIndex"
   }
 }

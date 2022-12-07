@@ -1,6 +1,8 @@
 <template>
-	<view>
-		这是收藏页
+	<view class="start">
+		<view class="start-Top">
+			<startTopBar></startTopBar>
+		</view>
 	</view>
 </template>
 

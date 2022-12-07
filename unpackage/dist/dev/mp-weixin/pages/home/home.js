@@ -8,20 +8,25 @@ const _sfc_main = {
 if (!Array) {
   const _easycom_topCardHome2 = common_vendor.resolveComponent("topCardHome");
   const _easycom_contentCardHome2 = common_vendor.resolveComponent("contentCardHome");
+  const _easycom_u_divider2 = common_vendor.resolveComponent("u-divider");
   const _easycom_contentIndex2 = common_vendor.resolveComponent("contentIndex");
-  (_easycom_topCardHome2 + _easycom_contentCardHome2 + _easycom_contentIndex2)();
+  (_easycom_topCardHome2 + _easycom_contentCardHome2 + _easycom_u_divider2 + _easycom_contentIndex2)();
 }
 const _easycom_topCardHome = () => "../../components/topCardHome/topCardHome.js";
 const _easycom_contentCardHome = () => "../../components/contentCardHome/contentCardHome.js";
+const _easycom_u_divider = () => "../../uni_modules/vk-uview-ui/components/u-divider/u-divider.js";
 const _easycom_contentIndex = () => "../../components/contentIndex/contentIndex.js";
 if (!Math) {
-  (_easycom_topCardHome + _easycom_contentCardHome + _easycom_contentIndex)();
+  (_easycom_topCardHome + _easycom_contentCardHome + _easycom_u_divider + _easycom_contentIndex)();
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.f(20, (item, k0, i0) => {
+    a: common_vendor.p({
+      color: "black"
+    }),
+    b: common_vendor.f(20, (item, k0, i0) => {
       return {
-        a: "92bb8f34-2-" + i0
+        a: "92bb8f34-3-" + i0
       };
     })
   };

@@ -2,19 +2,27 @@
 var common_vendor = require("../../common/vendor.js");
 if (!Array) {
   const _easycom_u_search2 = common_vendor.resolveComponent("u-search");
-  _easycom_u_search2();
+  const _easycom_u_toast2 = common_vendor.resolveComponent("u-toast");
+  (_easycom_u_search2 + _easycom_u_toast2)();
 }
 const _easycom_u_search = () => "../../uni_modules/vk-uview-ui/components/u-search/u-search.js";
+const _easycom_u_toast = () => "../../uni_modules/vk-uview-ui/components/u-toast/u-toast.js";
 if (!Math) {
-  _easycom_u_search();
+  (_easycom_u_search + _easycom_u_toast)();
 }
 const _sfc_main = {
   __name: "topBarIndex",
   setup(__props) {
+    const showToast = () => {
+      common_vendor.index.showToast({
+        title: "+10",
+        duration: 2e3
+      });
+    };
     const scanCode = () => {
       common_vendor.index.scanCode({
         success: (res) => {
-          console.log(JSON.stringify(res.result));
+          console.log(JSON.stringify(res.result)), showToast();
         }
       });
     };
@@ -27,7 +35,8 @@ const _sfc_main = {
           clearabled: true,
           shape: "square"
         }),
-        b: common_vendor.o(scanCode)
+        b: common_vendor.o(scanCode),
+        c: common_vendor.sr("uToast", "68ae1b24-1")
       };
     };
   }

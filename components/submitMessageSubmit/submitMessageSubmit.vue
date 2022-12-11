@@ -12,18 +12,13 @@
 				<u-form-item>
 					<u-upload></u-upload>
 				</u-form-item>
-
-				<!-- <u-form-item>
-
-				</u-form-item> -->
-
 			</u-form>
-			<view class="submitMessage-package-btn">
-				<u-button class="submitMessage-package-btn-rought" @click="submit" type="warning">草稿
-				</u-button>
-				<u-button class="submitMessage-package-btn-submit" @click="submit" type="warning" shape="circle">提交
-				</u-button>
-			</view>
+		</view>
+		<view class="submitMessage-btn">
+			<u-button class="submitMessage-btn-rought" @click="submit" type="warning">草稿
+			</u-button>
+			<u-button class="submitMessage-btn-submit" @click="submit" type="warning" shape="circle">提交
+			</u-button>
 		</view>
 	</view>
 </template>
@@ -83,6 +78,9 @@
 		height: 100%;
 		width: 750rpx;
 		background-color: white;
+		display: flex;
+		flex-flow: row wrap;
+		// border: 1rpx solid red;
 
 		&-package {
 			padding: 0 15rpx;
@@ -90,25 +88,29 @@
 			width: 100%;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
+			align-self: flex-start;
 
 			&-form {
 				margin: 0 0 15rpx 0;
 			}
+		}
 
-			&-btn {
-				margin-top: 460rpx;
-				display: flex;
+		&-btn {
+			align-self: flex-end;
+			// background-color: black;
+			width: 100%;
+			display: flex;
+			margin-top: 500rpx;
+			border: 1rxp solid red;
 
-				&-rought {
-					display: inline-block;
-					margin: 0 15rpx;
-				}
+			&-rought {
+				display: inline-block;
+				margin: 0 15rpx;
+			}
 
-				&-submit {
-					flex: 1;
-					display: inline-block;
-				}
+			&-submit {
+				flex: 1;
+				display: inline-block;
 			}
 		}
 	}

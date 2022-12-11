@@ -64,7 +64,24 @@
 .startTopBar .startCanvas.data-v-0c6844f4 {
   height: 700rpx;
   width: inherit;
-  background-color: #fe5d2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.startTopBar .startCanvas .nothing.data-v-0c6844f4 {
+  height: 250rpx;
+  width: 250rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.startTopBar .startCanvas .nothing .wawa.data-v-0c6844f4 {
+  height: 180rpx;
+  width: 180rpx;
+}
+.startTopBar .startCanvas .nothing .wawa image.data-v-0c6844f4 {
+  height: inherit;
+  width: inherit;
 }
 .startTopBar .contentCard.data-v-0c6844f4 {
   display: grid;

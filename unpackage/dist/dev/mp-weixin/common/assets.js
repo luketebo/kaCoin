@@ -59,10 +59,11 @@ var __glob_2_9 = /* @__PURE__ */ Object.freeze({
   [Symbol.toStringTag]: "Module",
   "default": ____
 });
-var _imports_0 = "/static/image/paigu.jpg";
+var _imports_0$1 = "/static/image/paigu.jpg";
 var _imports_1 = "/static/image/demo.jpg";
 var _imports_2 = "/static/icon/kaCoin-like-index/like.png";
 var _imports_3 = "/static/icon/kaCoin-like-index/like-h.png";
+var _imports_0 = "/static/image/start/wawa.png";
 exports.__glob_2_0 = __glob_2_0;
 exports.__glob_2_1 = __glob_2_1;
 exports.__glob_2_2 = __glob_2_2;
@@ -73,7 +74,8 @@ exports.__glob_2_6 = __glob_2_6;
 exports.__glob_2_7 = __glob_2_7;
 exports.__glob_2_8 = __glob_2_8;
 exports.__glob_2_9 = __glob_2_9;
-exports._imports_0 = _imports_0;
+exports._imports_0 = _imports_0$1;
+exports._imports_0$1 = _imports_0;
 exports._imports_1 = _imports_1;
 exports._imports_2 = _imports_2;
 exports._imports_3 = _imports_3;

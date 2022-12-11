@@ -2,6 +2,8 @@
   height: 100%;
   width: 750rpx;
   background-color: white;
+  display: flex;
+  flex-flow: row wrap;
 }
 .submitMessage-package {
   padding: 0 15rpx;
@@ -9,20 +11,23 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-self: flex-start;
 }
 .submitMessage-package-form {
   margin: 0 0 15rpx 0;
 }
-.submitMessage-package-btn {
-  margin-top: 460rpx;
+.submitMessage-btn {
+  align-self: flex-end;
+  width: 100%;
   display: flex;
+  margin-top: 500rpx;
+  border: 1rxp solid red;
 }
-.submitMessage-package-btn-rought {
+.submitMessage-btn-rought {
   display: inline-block;
   margin: 0 15rpx;
 }
-.submitMessage-package-btn-submit {
+.submitMessage-btn-submit {
   flex: 1;
   display: inline-block;
 }

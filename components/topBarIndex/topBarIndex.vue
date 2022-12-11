@@ -8,17 +8,25 @@
 		<view class="right">
 			<image src="../../static/icon/kaCoin-topBar-index/saoma.png" mode="aspectFit" @click.navtive="scanCode">
 			</image>
+			<u-toast ref="uToast"></u-toast>
 		</view>
 	</view>
 </template>
 
+
 <script setup>
+	const showToast = () => {
+		uni.showToast({
+			title: "+10",
+			duration: 2000
+		})
+	}
 	// 添加扫码事件
 	const scanCode = () => {
 		uni.scanCode({
 			success: (res) => {
-
-				console.log(JSON.stringify(res.result))
+				console.log(JSON.stringify(res.result)),
+					showToast()
 			}
 		})
 	}

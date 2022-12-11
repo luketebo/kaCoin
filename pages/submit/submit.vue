@@ -1,14 +1,6 @@
 <template>
 	<view class="submit">
-		<view class="submit-top">
-			<submitMessageSubmit></submitMessageSubmit>
-		</view>
-		<!-- <view class="submit-center">
-
-		</view>
-		<view class="submit-bottom">
-
-		</view> -->
+		<submitMessageSubmit></submitMessageSubmit>
 	</view>
 </template>
 
@@ -26,9 +18,5 @@
 	.submit {
 		background-color: #e8e8e8;
 		height: 100%;
-
-		&-top {
-			height: 100%;
-		}
 	}
 </style>

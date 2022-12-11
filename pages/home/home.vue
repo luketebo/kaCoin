@@ -37,7 +37,6 @@
 			margin: 0 15rpx;
 			display: flex;
 			justify-content: center;
-			// text-decoration: ;
 		}
 	}
 

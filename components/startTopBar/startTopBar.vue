@@ -7,6 +7,12 @@
 			</view>
 		</view>
 		<view class="startCanvas">
+			<view class='nothing'>
+				<view class='wawa'>
+					<image src="@/static/image/start/wawa.png"></image>
+				</view>
+				<view class='text'>还没有收藏过哟~</view>
+			</view>
 
 		</view>
 		<u-divider color="black">你可能还喜欢</u-divider>
@@ -95,7 +101,31 @@
 		.startCanvas {
 			height: 700rpx;
 			width: inherit;
-			background-color: #fe5d2a;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			// background-color: #fe5d2a;
+
+			.nothing {
+				height: 250rpx;
+				width: 250rpx;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+
+				.wawa {
+					height: 180rpx;
+					width: 180rpx;
+
+					image {
+						height: inherit;
+						width: inherit;
+
+					}
+				}
+
+				.text {}
+			}
 		}
 
 		.contentCard {

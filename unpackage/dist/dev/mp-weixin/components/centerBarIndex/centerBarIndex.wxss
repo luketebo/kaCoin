@@ -24,7 +24,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.centerBar.data-v-330230c4 {
+.centerBar.data-v-6e355c99 {
   height: 80rpx;
   line-height: 80rpx;
   margin: 23rpx 15rpx;
@@ -36,14 +36,14 @@
   z-index: 100;
   background-color: white;
 }
-.centerBar .centerScroll.data-v-330230c4 {
+.centerBar .centerScroll.data-v-6e355c99 {
   height: inherit;
   white-space: nowrap;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.centerBar .centerScroll.data-v-330230c4 ::-webkit-scrollbar {
+.centerBar .centerScroll.data-v-6e355c99 ::-webkit-scrollbar {
   width: 4px !important;
   height: 1px !important;
   overflow: auto !important;
@@ -51,7 +51,7 @@
   -webkit-appearance: auto !important;
   display: block;
 }
-.centerBar .centerScroll .item.data-v-330230c4 {
+.centerBar .centerScroll .item.data-v-6e355c99 {
   display: inline-block;
   height: 80rpx;
   width: 100rpx;
@@ -60,7 +60,7 @@
   line-height: 80rpx;
   text-align: center;
 }
-.centerBar .centerScroll .active.data-v-330230c4 {
+.centerBar .centerScroll .active.data-v-6e355c99 {
   -webkit-text-decoration: underline 9rpx;
           text-decoration: underline 9rpx;
   -webkit-text-decoration-color: #fe5d2a;

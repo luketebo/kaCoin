@@ -2,7 +2,9 @@
 if (!String.prototype.padStart) {
   String.prototype.padStart = function(maxLength, fillString = " ") {
     if (Object.prototype.toString.call(fillString) !== "[object String]")
-      throw new TypeError("fillString must be String");
+      throw new TypeError(
+        "fillString must be String"
+      );
     let str = this;
     if (str.length >= maxLength)
       return String(str);

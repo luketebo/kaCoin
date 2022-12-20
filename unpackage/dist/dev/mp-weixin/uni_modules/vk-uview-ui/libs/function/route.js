@@ -1,5 +1,5 @@
 "use strict";
-var common_vendor = require("../../../../common/vendor.js");
+const common_vendor = require("../../../../common/vendor.js");
 class Router {
   constructor() {
     this.config = {
@@ -87,5 +87,5 @@ class Router {
     }
   }
 }
-var route = new Router().route;
+const route = new Router().route;
 exports.route = route;

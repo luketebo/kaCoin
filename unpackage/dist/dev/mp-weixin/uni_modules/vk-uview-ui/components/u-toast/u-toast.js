@@ -1,5 +1,5 @@
 "use strict";
-var common_vendor = require("../../../../common/vendor.js");
+const common_vendor = require("../../../../common/vendor.js");
 const _sfc_main = {
   name: "u-toast",
   props: {
@@ -117,5 +117,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     g: $options.uZIndex
   });
 }
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-509fd82b"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/uni_modules/vk-uview-ui/components/u-toast/u-toast.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-dcb3ce67"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/uni_modules/vk-uview-ui/components/u-toast/u-toast.vue"]]);
 wx.createComponent(Component);

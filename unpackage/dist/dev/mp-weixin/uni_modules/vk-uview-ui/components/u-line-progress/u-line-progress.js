@@ -1,5 +1,5 @@
 "use strict";
-var common_vendor = require("../../../../common/vendor.js");
+const common_vendor = require("../../../../common/vendor.js");
 const _sfc_main = {
   name: "u-line-progress",
   props: {
@@ -70,5 +70,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     j: $props.inactiveColor
   });
 }
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-2ba456a9"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/uni_modules/vk-uview-ui/components/u-line-progress/u-line-progress.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-af2fba7d"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/uni_modules/vk-uview-ui/components/u-line-progress/u-line-progress.vue"]]);
 wx.createComponent(Component);

@@ -24,15 +24,15 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.homeBg.data-v-92bb8f34 {
+.homeBg.data-v-07e72d3c {
   background-image: linear-gradient(120deg, #f6d365 5%, #fda085 80%);
 }
-.footer text.data-v-92bb8f34 {
+.footer text.data-v-07e72d3c {
   margin: 0 15rpx;
   display: flex;
   justify-content: center;
 }
-.contentCard.data-v-92bb8f34 {
+.contentCard.data-v-07e72d3c {
   display: grid;
   grid-template-columns: auto auto;
   margin: 15rpx;

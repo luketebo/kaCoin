@@ -1,6 +1,5 @@
 "use strict";
-var common_vendor = require("../../common/vendor.js");
-const _sfc_main = {};
+const common_vendor = require("../../common/vendor.js");
 if (!Array) {
   const _easycom_topBarIndex2 = common_vendor.resolveComponent("topBarIndex");
   const _easycom_swiperBarIndex2 = common_vendor.resolveComponent("swiperBarIndex");
@@ -15,14 +14,19 @@ const _easycom_contentIndex = () => "../../components/contentIndex/contentIndex.
 if (!Math) {
   (_easycom_topBarIndex + _easycom_swiperBarIndex + _easycom_centerBarIndex + _easycom_contentIndex)();
 }
-function _sfc_render(_ctx, _cache) {
-  return {
-    a: common_vendor.f(20, (item, k0, i0) => {
+const _sfc_main = {
+  __name: "index",
+  setup(__props) {
+    return (_ctx, _cache) => {
       return {
-        a: "57280228-3-" + i0
+        a: common_vendor.f(20, (item, k0, i0) => {
+          return {
+            a: "1cf27b2a-3-" + i0
+          };
+        })
       };
-    })
-  };
-}
-var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-57280228"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/pages/index/index.vue"]]);
+    };
+  }
+};
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-1cf27b2a"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/pages/index/index.vue"]]);
 wx.createPage(MiniProgramPage);

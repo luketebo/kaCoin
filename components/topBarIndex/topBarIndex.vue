@@ -13,7 +13,6 @@
 	</view>
 </template>
 
-
 <script setup>
 	const showToast = () => {
 		uni.showToast({
@@ -31,6 +30,7 @@
 		})
 	}
 </script>
+
 <style lang='scss' scoped>
 	.topBar {
 

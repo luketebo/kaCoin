@@ -24,7 +24,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.u-form-item.data-v-1463b855 {
+.u-form-item.data-v-361fbc0d {
 
   display: flex;
   flex-direction: row;
@@ -36,22 +36,22 @@
   line-height: 70rpx;
   flex-direction: column;
 }
-.u-form-item__border-bottom--error.data-v-1463b855:after {
+.u-form-item__border-bottom--error.data-v-361fbc0d:after {
   border-color: #fa3534;
 }
-.u-form-item__body.data-v-1463b855 {
+.u-form-item__body.data-v-361fbc0d {
 
   display: flex;
   flex-direction: row;
 }
-.u-form-item--left.data-v-1463b855 {
+.u-form-item--left.data-v-361fbc0d {
 
   display: flex;
   flex-direction: row;
 
   align-items: center;
 }
-.u-form-item--left__content.data-v-1463b855 {
+.u-form-item--left__content.data-v-361fbc0d {
   position: relative;
 
   display: flex;
@@ -61,17 +61,17 @@
   padding-right: 10rpx;
   flex: 1;
 }
-.u-form-item--left__content__icon.data-v-1463b855 {
+.u-form-item--left__content__icon.data-v-361fbc0d {
   margin-right: 8rpx;
 }
-.u-form-item--left__content--required.data-v-1463b855 {
+.u-form-item--left__content--required.data-v-361fbc0d {
   position: absolute;
   left: -16rpx;
   vertical-align: middle;
   color: #fa3534;
   padding-top: 6rpx;
 }
-.u-form-item--left__content__label.data-v-1463b855 {
+.u-form-item--left__content__label.data-v-361fbc0d {
 
   display: flex;
   flex-direction: row;
@@ -79,10 +79,10 @@
   align-items: center;
   flex: 1;
 }
-.u-form-item--right.data-v-1463b855 {
+.u-form-item--right.data-v-361fbc0d {
   flex: 1;
 }
-.u-form-item--right__content.data-v-1463b855 {
+.u-form-item--right__content.data-v-361fbc0d {
 
   display: flex;
   flex-direction: row;
@@ -90,15 +90,15 @@
   align-items: center;
   flex: 1;
 }
-.u-form-item--right__content__slot.data-v-1463b855 {
+.u-form-item--right__content__slot.data-v-361fbc0d {
   flex: 1;
 }
-.u-form-item--right__content__icon.data-v-1463b855 {
+.u-form-item--right__content__icon.data-v-361fbc0d {
   margin-left: 10rpx;
   color: #c0c4cc;
   font-size: 30rpx;
 }
-.u-form-item__message.data-v-1463b855 {
+.u-form-item__message.data-v-361fbc0d {
   font-size: 24rpx;
   line-height: 24rpx;
   color: #fa3534;

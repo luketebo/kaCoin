@@ -1,5 +1,5 @@
 "use strict";
-var common_vendor = require("../../../../common/vendor.js");
+const common_vendor = require("../../../../common/vendor.js");
 const _sfc_main = {
   name: "u-search",
   emits: ["update:modelValue", "input", "change", "search", "custom", "clear", "focus", "blur"],
@@ -230,5 +230,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     A: $props.margin
   });
 }
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-08c1dccb"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/uni_modules/vk-uview-ui/components/u-search/u-search.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-3cb29fc1"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/uni_modules/vk-uview-ui/components/u-search/u-search.vue"]]);
 wx.createComponent(Component);

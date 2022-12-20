@@ -1,5 +1,5 @@
 "use strict";
-var common_vendor = require("../../../../common/vendor.js");
+const common_vendor = require("../../../../common/vendor.js");
 const _sfc_main = {
   name: "u-upload",
   emits: ["update:file-list", "on-oversize", "on-list-change", "on-preview", "on-remove", "on-success", "on-change", "on-error", "on-progress", "on-uploaded", "on-choose-complete", "on-choose-fail"],
@@ -434,18 +434,18 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   }, $props.showUploadList ? {
     c: common_vendor.f($data.lists, (item, index, i0) => {
       return common_vendor.e($props.deletable ? {
-        a: "6cbfbe2a-0-" + i0,
+        a: "e7606f58-0-" + i0,
         b: common_vendor.p({
           name: $props.delIcon,
           size: "20",
           color: $props.delColor
         }),
-        c: common_vendor.o(($event) => $options.deleteItem(index)),
+        c: common_vendor.o(($event) => $options.deleteItem(index), index),
         d: $props.delBgColor
       } : {}, {
         e: $props.showProgress && item.progress > 0 && item.progress != 100 && !item.error
       }, $props.showProgress && item.progress > 0 && item.progress != 100 && !item.error ? {
-        f: "6cbfbe2a-1-" + i0,
+        f: "e7606f58-1-" + i0,
         g: common_vendor.p({
           ["show-percent"]: false,
           height: "16",
@@ -454,11 +454,11 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
       } : {}, {
         h: item.error
       }, item.error ? {
-        i: common_vendor.o(($event) => $options.retry(index))
+        i: common_vendor.o(($event) => $options.retry(index), index)
       } : {}, {
         j: !item.isImage
       }, !item.isImage ? {
-        k: common_vendor.o(($event) => $options.doPreviewImage(item.url || item.path, index)),
+        k: common_vendor.o(($event) => $options.doPreviewImage(item.url || item.path, index), index),
         l: item.url || item.path,
         m: $props.imageMode
       } : {}, {
@@ -487,5 +487,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     n: common_vendor.o((...args) => $options.selectFile && $options.selectFile(...args))
   }) : {}) : {});
 }
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-6cbfbe2a"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/uni_modules/vk-uview-ui/components/u-upload/u-upload.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-e7606f58"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/uni_modules/vk-uview-ui/components/u-upload/u-upload.vue"]]);
 wx.createComponent(Component);

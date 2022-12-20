@@ -99,7 +99,7 @@ function colorToRgba(color, alpha = 0.3) {
     return sColor;
   }
 }
-var colorGradient$1 = {
+const colorGradient$1 = {
   colorGradient,
   hexToRgb,
   rgbToHex,

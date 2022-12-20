@@ -1,5 +1,5 @@
 "use strict";
-var uni_modules_vkUviewUi_libs_function_timeFormat = require("./timeFormat.js");
+const uni_modules_vkUviewUi_libs_function_timeFormat = require("./timeFormat.js");
 function timeFrom(dateTime = null, format = "yyyy-mm-dd") {
   if (!dateTime)
     dateTime = Number(new Date());

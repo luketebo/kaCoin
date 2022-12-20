@@ -24,16 +24,16 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.swiperBar.data-v-5e6c9664 {
+.swiperBar.data-v-b55ff52e {
   height: 220rpx;
   padding-bottom: 25rpx;
   margin: 0rpx 15rpx;
 }
-.swiperBar .scrollBar.data-v-5e6c9664 {
+.swiperBar .scrollBar.data-v-b55ff52e {
   height: inherit;
   white-space: nowrap;
 }
-.swiperBar .scrollBar.data-v-5e6c9664 ::-webkit-scrollbar {
+.swiperBar .scrollBar.data-v-b55ff52e ::-webkit-scrollbar {
   width: 4px !important;
   height: 1px !important;
   overflow: auto !important;
@@ -41,46 +41,46 @@
   -webkit-appearance: auto !important;
   display: block;
 }
-.swiperBar .scrollBar .item.data-v-5e6c9664 {
+.swiperBar .scrollBar .item.data-v-b55ff52e {
   height: inherit;
   width: 150rpx;
   display: inline-block;
 }
-.swiperBar .scrollBar .item .top.data-v-5e6c9664 {
+.swiperBar .scrollBar .item .top.data-v-b55ff52e {
   height: 110rpx;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.swiperBar .scrollBar .item .top .pic.data-v-5e6c9664 {
+.swiperBar .scrollBar .item .top .pic.data-v-b55ff52e {
   height: 55rpx;
   width: 55rpx;
 }
-.swiperBar .scrollBar .item .top .pic image.data-v-5e6c9664 {
+.swiperBar .scrollBar .item .top .pic image.data-v-b55ff52e {
   height: 100%;
   width: 100%;
 }
-.swiperBar .scrollBar .item .top text.data-v-5e6c9664 {
+.swiperBar .scrollBar .item .top text.data-v-b55ff52e {
   font-size: 25rpx;
   font-weight: bold;
 }
-.swiperBar .scrollBar .item .bottom.data-v-5e6c9664 {
+.swiperBar .scrollBar .item .bottom.data-v-b55ff52e {
   height: 110rpx;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.swiperBar .scrollBar .item .bottom .pic.data-v-5e6c9664 {
+.swiperBar .scrollBar .item .bottom .pic.data-v-b55ff52e {
   height: 55rpx;
   width: 55rpx;
 }
-.swiperBar .scrollBar .item .bottom .pic image.data-v-5e6c9664 {
+.swiperBar .scrollBar .item .bottom .pic image.data-v-b55ff52e {
   height: 100%;
   width: 100%;
 }
-.swiperBar .scrollBar .item .bottom text.data-v-5e6c9664 {
+.swiperBar .scrollBar .item .bottom text.data-v-b55ff52e {
   font-size: 25rpx;
   font-weight: bold;
 }

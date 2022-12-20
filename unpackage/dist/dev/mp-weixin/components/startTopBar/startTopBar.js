@@ -1,6 +1,6 @@
 "use strict";
-var common_vendor = require("../../common/vendor.js");
-var common_assets = require("../../common/assets.js");
+const common_vendor = require("../../common/vendor.js");
+const common_assets = require("../../common/assets.js");
 if (!Array) {
   const _easycom_u_divider2 = common_vendor.resolveComponent("u-divider");
   const _easycom_contentIndex2 = common_vendor.resolveComponent("contentIndex");
@@ -56,12 +56,12 @@ const _sfc_main = {
         }),
         d: common_vendor.f(20, (item, k0, i0) => {
           return {
-            a: "0c6844f4-1-" + i0
+            a: "3b6549b7-1-" + i0
           };
         })
       };
     };
   }
 };
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-0c6844f4"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/components/startTopBar/startTopBar.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-3b6549b7"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/components/startTopBar/startTopBar.vue"]]);
 wx.createComponent(Component);

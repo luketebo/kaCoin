@@ -1,8 +1,7 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports[Symbol.toStringTag] = "Module";
-var common_vendor = require("./common/vendor.js");
-var uni_modules_vkUviewUi_index = require("./uni_modules/vk-uview-ui/index.js");
+Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
+const common_vendor = require("./common/vendor.js");
+const uni_modules_vkUviewUi_index = require("./uni_modules/vk-uview-ui/index.js");
 require("./uni_modules/vk-uview-ui/libs/mixin/mixin.js");
 require("./uni_modules/vk-uview-ui/libs/request/index.js");
 require("./uni_modules/vk-uview-ui/libs/function/deepMerge.js");
@@ -46,7 +45,7 @@ const _sfc_main = {
     console.log("App Hide");
   }
 };
-var App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/Code-repository/Hbuilder/kaCoin/App.vue"]]);
+const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/Code-repository/Hbuilder/kaCoin/App.vue"]]);
 function createApp() {
   const app = common_vendor.createSSRApp(App);
   app.use(uni_modules_vkUviewUi_index.uView);

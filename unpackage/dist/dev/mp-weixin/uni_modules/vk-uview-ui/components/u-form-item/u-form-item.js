@@ -1,7 +1,7 @@
 "use strict";
-var uni_modules_vkUviewUi_libs_util_emitter = require("../../libs/util/emitter.js");
-var uni_modules_vkUviewUi_libs_util_asyncValidator = require("../../libs/util/async-validator.js");
-var common_vendor = require("../../../../common/vendor.js");
+const uni_modules_vkUviewUi_libs_util_emitter = require("../../libs/util/emitter.js");
+const uni_modules_vkUviewUi_libs_util_asyncValidator = require("../../libs/util/async-validator.js");
+const common_vendor = require("../../../../common/vendor.js");
 uni_modules_vkUviewUi_libs_util_asyncValidator.Schema.warning = function() {
 };
 const _sfc_main = {
@@ -302,5 +302,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     v: $data.validateState === "error" && $options.showError("border-bottom") ? 1 : ""
   });
 }
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-1463b855"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/uni_modules/vk-uview-ui/components/u-form-item/u-form-item.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-361fbc0d"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/uni_modules/vk-uview-ui/components/u-form-item/u-form-item.vue"]]);
 wx.createComponent(Component);

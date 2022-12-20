@@ -1,5 +1,5 @@
 "use strict";
-var common_vendor = require("../../common/vendor.js");
+const common_vendor = require("../../common/vendor.js");
 const _sfc_main = {
   __name: "topCardHome",
   setup(__props) {
@@ -32,5 +32,5 @@ const _sfc_main = {
     };
   }
 };
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-4a08a18e"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/components/topCardHome/topCardHome.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-c242b468"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/components/topCardHome/topCardHome.vue"]]);
 wx.createComponent(Component);

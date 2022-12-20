@@ -1,6 +1,6 @@
 "use strict";
-var common_vendor = require("../../../../common/vendor.js");
-var mixin = {
+const common_vendor = require("../../../../common/vendor.js");
+const mixin = {
   data() {
     return {};
   },

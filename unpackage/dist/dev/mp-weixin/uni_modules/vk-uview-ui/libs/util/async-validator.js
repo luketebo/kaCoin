@@ -229,20 +229,23 @@ function whitespace(rule, value, source, errors, options) {
 }
 var pattern = {
   email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-  url: new RegExp("^(?!mailto:)(?:(?:http|https|ftp)://|//)(?:\\S+(?::\\S*)?@)?(?:(?:(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[0-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(?:(?:[a-z\\u00a1-\\uffff0-9]+-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]+-*)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,})))|localhost)(?::\\d{2,5})?(?:(/|\\?|#)[^\\s]*)?$", "i"),
+  url: new RegExp(
+    "^(?!mailto:)(?:(?:http|https|ftp)://|//)(?:\\S+(?::\\S*)?@)?(?:(?:(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[0-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(?:(?:[a-z\\u00a1-\\uffff0-9]+-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]+-*)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,})))|localhost)(?::\\d{2,5})?(?:(/|\\?|#)[^\\s]*)?$",
+    "i"
+  ),
   hex: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/i
 };
 var types = {
-  integer: function integer2(value) {
+  integer: function integer(value) {
     return types.number(value) && parseInt(value, 10) === value;
   },
   "float": function float(value) {
     return types.number(value) && !types.integer(value);
   },
-  array: function array2(value) {
+  array: function array(value) {
     return Array.isArray(value);
   },
-  regexp: function regexp2(value) {
+  regexp: function regexp(value) {
     if (value instanceof RegExp) {
       return true;
     }
@@ -252,19 +255,19 @@ var types = {
       return false;
     }
   },
-  date: function date2(value) {
+  date: function date(value) {
     return typeof value.getTime === "function" && typeof value.getMonth === "function" && typeof value.getYear === "function";
   },
-  number: function number2(value) {
+  number: function number(value) {
     if (isNaN(value)) {
       return false;
     }
     return typeof +value === "number";
   },
-  object: function object2(value) {
+  object: function object(value) {
     return typeof value === "object" && !types.array(value);
   },
-  method: function method2(value) {
+  method: function method(value) {
     return typeof value === "function";
   },
   email: function email(value) {
@@ -379,7 +382,7 @@ function string(rule, value, callback, source, options) {
   }
   callback(errors);
 }
-function method(rule, value, callback, source, options) {
+function method2(rule, value, callback, source, options) {
   var errors = [];
   var validate2 = rule.required || !rule.required && source.hasOwnProperty(rule.field);
   if (validate2) {
@@ -393,7 +396,7 @@ function method(rule, value, callback, source, options) {
   }
   callback(errors);
 }
-function number(rule, value, callback, source, options) {
+function number2(rule, value, callback, source, options) {
   var errors = [];
   var validate2 = rule.required || !rule.required && source.hasOwnProperty(rule.field);
   if (validate2) {
@@ -425,7 +428,7 @@ function _boolean(rule, value, callback, source, options) {
   }
   callback(errors);
 }
-function regexp(rule, value, callback, source, options) {
+function regexp2(rule, value, callback, source, options) {
   var errors = [];
   var validate2 = rule.required || !rule.required && source.hasOwnProperty(rule.field);
   if (validate2) {
@@ -439,7 +442,7 @@ function regexp(rule, value, callback, source, options) {
   }
   callback(errors);
 }
-function integer(rule, value, callback, source, options) {
+function integer2(rule, value, callback, source, options) {
   var errors = [];
   var validate2 = rule.required || !rule.required && source.hasOwnProperty(rule.field);
   if (validate2) {
@@ -469,7 +472,7 @@ function floatFn(rule, value, callback, source, options) {
   }
   callback(errors);
 }
-function array(rule, value, callback, source, options) {
+function array2(rule, value, callback, source, options) {
   var errors = [];
   var validate2 = rule.required || !rule.required && source.hasOwnProperty(rule.field);
   if (validate2) {
@@ -484,7 +487,7 @@ function array(rule, value, callback, source, options) {
   }
   callback(errors);
 }
-function object(rule, value, callback, source, options) {
+function object2(rule, value, callback, source, options) {
   var errors = [];
   var validate2 = rule.required || !rule.required && source.hasOwnProperty(rule.field);
   if (validate2) {
@@ -527,7 +530,7 @@ function pattern$2(rule, value, callback, source, options) {
   }
   callback(errors);
 }
-function date(rule, value, callback, source, options) {
+function date2(rule, value, callback, source, options) {
   var errors = [];
   var validate2 = rule.required || !rule.required && source.hasOwnProperty(rule.field);
   if (validate2) {
@@ -584,17 +587,17 @@ function any(rule, value, callback, source, options) {
 }
 var validators = {
   string,
-  method,
-  number,
+  method: method2,
+  number: number2,
   "boolean": _boolean,
-  regexp,
-  integer,
+  regexp: regexp2,
+  integer: integer2,
   "float": floatFn,
-  array,
-  object,
+  array: array2,
+  object: object2,
   "enum": enumerable$1,
   pattern: pattern$2,
-  date,
+  date: date2,
   url: type$1,
   hex: type$1,
   email: type$1,

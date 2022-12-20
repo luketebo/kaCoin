@@ -1,7 +1,7 @@
 "use strict";
 function broadcast(componentName, eventName, params) {
 }
-var Emitter = {
+const Emitter = {
   methods: {
     dispatch(componentName, eventName, params) {
       let parent = this.$parent || this.$root;

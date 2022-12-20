@@ -1,5 +1,5 @@
 "use strict";
-var common_vendor = require("../../common/vendor.js");
+const common_vendor = require("../../common/vendor.js");
 const _sfc_main = {
   __name: "centerBarIndex",
   setup(__props) {
@@ -67,5 +67,5 @@ const _sfc_main = {
     };
   }
 };
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-330230c4"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/components/centerBarIndex/centerBarIndex.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-6e355c99"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/components/centerBarIndex/centerBarIndex.vue"]]);
 wx.createComponent(Component);

@@ -1,7 +1,7 @@
 "use strict";
-var common_vendor = require("../../../../common/vendor.js");
-var uni_modules_vkUviewUi_libs_function_deepMerge = require("../function/deepMerge.js");
-var uni_modules_vkUviewUi_libs_function_test = require("../function/test.js");
+const common_vendor = require("../../../../common/vendor.js");
+const uni_modules_vkUviewUi_libs_function_deepMerge = require("../function/deepMerge.js");
+const uni_modules_vkUviewUi_libs_function_test = require("../function/test.js");
 class Request {
   setConfig(customConfig) {
     this.config = uni_modules_vkUviewUi_libs_function_deepMerge.deepMerge(this.config, customConfig);
@@ -119,5 +119,5 @@ class Request {
     };
   }
 }
-var http = new Request();
+const http = new Request();
 exports.http = http;

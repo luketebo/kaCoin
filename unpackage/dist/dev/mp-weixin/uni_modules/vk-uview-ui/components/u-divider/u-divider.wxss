@@ -24,7 +24,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.u-divider.data-v-76d3538f {
+.u-divider.data-v-3203ecfe {
   width: 100%;
   position: relative;
   text-align: center;
@@ -37,27 +37,27 @@
   overflow: hidden;
   flex-direction: row;
 }
-.u-divider-line.data-v-76d3538f {
+.u-divider-line.data-v-3203ecfe {
   border-bottom: 1px solid #e4e7ed;
   transform: scale(1, 0.5);
   transform-origin: center;
 }
-.u-divider-line--bordercolor--primary.data-v-76d3538f {
+.u-divider-line--bordercolor--primary.data-v-3203ecfe {
   border-color: #2979ff;
 }
-.u-divider-line--bordercolor--success.data-v-76d3538f {
+.u-divider-line--bordercolor--success.data-v-3203ecfe {
   border-color: #19be6b;
 }
-.u-divider-line--bordercolor--error.data-v-76d3538f {
+.u-divider-line--bordercolor--error.data-v-3203ecfe {
   border-color: #2979ff;
 }
-.u-divider-line--bordercolor--info.data-v-76d3538f {
+.u-divider-line--bordercolor--info.data-v-3203ecfe {
   border-color: #909399;
 }
-.u-divider-line--bordercolor--warning.data-v-76d3538f {
+.u-divider-line--bordercolor--warning.data-v-3203ecfe {
   border-color: #ff9900;
 }
-.u-divider-text.data-v-76d3538f {
+.u-divider-text.data-v-3203ecfe {
   white-space: nowrap;
   padding: 0 16rpx;
   display: inline-flex;

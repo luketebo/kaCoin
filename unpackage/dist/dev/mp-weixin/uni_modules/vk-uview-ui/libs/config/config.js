@@ -1,6 +1,6 @@
 "use strict";
 let version = "1.10.1";
-var config = {
+const config = {
   v: version,
   version,
   type: [

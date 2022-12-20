@@ -24,7 +24,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.u-progress.data-v-2ba456a9 {
+.u-progress.data-v-af2fba7d {
   overflow: hidden;
   height: 15px;
   display: inline-flex;
@@ -32,7 +32,7 @@
   width: 100%;
   border-radius: 100rpx;
 }
-.u-active.data-v-2ba456a9 {
+.u-active.data-v-af2fba7d {
   width: 0;
   height: 100%;
   align-items: center;
@@ -46,14 +46,14 @@
   color: #ffffff;
   transition: all 0.4s ease;
 }
-.u-striped.data-v-2ba456a9 {
+.u-striped.data-v-af2fba7d {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 39px 39px;
 }
-.u-striped-active.data-v-2ba456a9 {
-  animation: progress-stripes-2ba456a9 2s linear infinite;
+.u-striped-active.data-v-af2fba7d {
+  animation: progress-stripes-af2fba7d 2s linear infinite;
 }
-@keyframes progress-stripes-2ba456a9 {
+@keyframes progress-stripes-af2fba7d {
 0% {
     background-position: 0 0;
 }

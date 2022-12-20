@@ -1,5 +1,5 @@
 "use strict";
-var zIndex = {
+const zIndex = {
   toast: 10090,
   noNetwork: 10080,
   popup: 10075,

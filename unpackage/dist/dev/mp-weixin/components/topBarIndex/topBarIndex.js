@@ -1,5 +1,5 @@
 "use strict";
-var common_vendor = require("../../common/vendor.js");
+const common_vendor = require("../../common/vendor.js");
 if (!Array) {
   const _easycom_u_search2 = common_vendor.resolveComponent("u-search");
   const _easycom_u_toast2 = common_vendor.resolveComponent("u-toast");
@@ -36,10 +36,10 @@ const _sfc_main = {
           shape: "square"
         }),
         b: common_vendor.o(scanCode),
-        c: common_vendor.sr("uToast", "68ae1b24-1")
+        c: common_vendor.sr("uToast", "7f451f83-1")
       };
     };
   }
 };
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-68ae1b24"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/components/topBarIndex/topBarIndex.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__scopeId", "data-v-7f451f83"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/components/topBarIndex/topBarIndex.vue"]]);
 wx.createComponent(Component);

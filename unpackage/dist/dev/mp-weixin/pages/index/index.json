@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "kaCoin",
-  "usingComponents": {
-    "top-bar-index": "../../components/topBarIndex/topBarIndex",
-    "swiper-bar-index": "../../components/swiperBarIndex/swiperBarIndex",
-    "center-bar-index": "../../components/centerBarIndex/centerBarIndex",
-    "content-index": "../../components/contentIndex/contentIndex"
-  }
-}

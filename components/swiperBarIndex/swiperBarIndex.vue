@@ -6,7 +6,6 @@
 					<view class="pic">
 						<image src="../../static/image/index/food.png" mode="aspectFill"></image>
 					</view>
-
 					<text>美食</text>
 				</view>
 				<view class="bottom">
@@ -139,7 +138,7 @@
 					align-items: center;
 
 					.pic {
-						height: 55rpx;
+						height: 60rpx;
 						width: 55rpx;
 
 						image {

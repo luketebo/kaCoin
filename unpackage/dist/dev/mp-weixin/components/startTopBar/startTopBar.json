@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "u-divider": "../../uni_modules/vk-uview-ui/components/u-divider/u-divider",
-    "content-index": "../contentIndex/contentIndex"
-  }
-}

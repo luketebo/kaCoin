@@ -1135,4 +1135,5 @@ class QQMapWX {
 		Utils.locationProcess(options, locationsuccess);
 	}
 };
-module.exports = QQMapWX;
+//module.exports = QQMapWX;
+export default QQMapWX;

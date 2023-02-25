@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/map/map",
+    "pages/start/start",
+    "pages/submit/submit"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#fe5d2a",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/static/icon/kaCoin-tabBar-no-select/index.png",
+        "selectedIconPath": "/static/icon/kaCoin-tabBar-selected/index.png"
+      },
+      {
+        "text": "地图",
+        "pagePath": "pages/map/map",
+        "iconPath": "/static/icon/kaCoin-tabBar-no-select/map.png",
+        "selectedIconPath": "/static/icon/kaCoin-tabBar-selected/map.png"
+      },
+      {
+        "text": "发布",
+        "pagePath": "pages/submit/submit",
+        "iconPath": "/static/icon/kaCoin-tabBar-no-select/add.png",
+        "selectedIconPath": "static/icon/kaCoin-tabBar-selected/add.png",
+        "midButton": true
+      },
+      {
+        "text": "收藏",
+        "pagePath": "pages/start/start",
+        "iconPath": "/static/icon/kaCoin-tabBar-no-select/start.png",
+        "selectedIconPath": "/static/icon/kaCoin-tabBar-selected/start.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/home/home",
+        "iconPath": "/static/icon/kaCoin-tabBar-no-select/home.png",
+        "selectedIconPath": "/static/icon/kaCoin-tabBar-selected/home.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "为了您更好的体验，请确认获取您的位置"
+    }
+  },
+  "requiredPrivateInfos": [
+    "chooseAddress",
+    "chooseLocation",
+    "choosePoi",
+    "getLocation",
+    "onLocationChange",
+    "startLocationUpdateBackground",
+    "startLocationUpdate"
+  ],
+  "usingComponents": {}
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "发布",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "submit-message-submit": "../../components/submitMessageSubmit/submitMessageSubmit"
+  }
+}

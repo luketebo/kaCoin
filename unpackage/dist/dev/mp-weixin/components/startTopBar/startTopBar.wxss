@@ -1,0 +1,90 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* uni.scss 引入全局scss 变量文件*/
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.startTopBar.data-v-3b6549b7 {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 23rpx 15rpx;
+  background-color: white;
+}
+.startTopBar .startScroll.data-v-3b6549b7 {
+  height: inherit;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.startTopBar .startScroll.data-v-3b6549b7 ::-webkit-scrollbar {
+  width: 4rpx !important;
+  height: 1rpx !important;
+  overflow: auto !important;
+  background: transparent !important;
+  -webkit-appearance: auto !important;
+  display: block;
+}
+.startTopBar .startScroll .item.data-v-3b6549b7 {
+  display: inline-block;
+  height: 80rpx;
+  width: 200rpx;
+  font-weight: bold;
+  font-size: 25rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.startTopBar .startScroll .active.data-v-3b6549b7 {
+  -webkit-text-decoration: underline 9rpx;
+          text-decoration: underline 9rpx;
+  -webkit-text-decoration-color: #fe5d2a;
+          text-decoration-color: #fe5d2a;
+  font-size: 35rpx;
+}
+.startTopBar .startCanvas.data-v-3b6549b7 {
+  height: 700rpx;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.startTopBar .startCanvas .nothing.data-v-3b6549b7 {
+  height: 250rpx;
+  width: 250rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.startTopBar .startCanvas .nothing .wawa.data-v-3b6549b7 {
+  height: 180rpx;
+  width: 180rpx;
+}
+.startTopBar .startCanvas .nothing .wawa image.data-v-3b6549b7 {
+  height: inherit;
+  width: inherit;
+}
+.startTopBar .contentCard.data-v-3b6549b7 {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 15rpx;
+}

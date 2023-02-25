@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<map id="kaCoin" style="width: 750rpx; height: 100vh;" :latitude="latitude" :longitude="longitude"
-			:markers="covers" show-location>
+			:markers="covers" show-location="">
 			<view class="map_top">
 				<view class="map_search">
 					<u-search placeholder="日照香炉生紫烟" :show-action="false" input-align="center" :clearabled="true"
@@ -16,60 +16,124 @@
 			<view style="margin-top: 40rpx; margin-left: 16rpx; color: red; border: 3rpx red solid;">
 				当前定位： {{ position }}
 			</view>
-			<view class="map_location">
+			<view class="map_location" @click="moveToLocation(position)">
 				<image src="../../static/icon/kaCoin-map/click-location.png"></image>
 			</view>
 			<view>上拉条</view>
 		</map>
 	</view>
 </template>
-
 <script>
+	import QQMapWX from '../../libs/qqmap-wx-jssdk.js';
 	export default {
 		data() {
 			return {
+				id: 0,
 				title: 'kaCoin',
 				latitude: 39.909,
 				longitude: 116.39742,
-				covers: [{
-					id: 1,
-					latitude: 39.899,
-					longitude: 116.39742,
-					width: 30,
-					height: 30,
-					iconPath: "../../static/icon/kaCoin-map/location.png"
-				}],
+				covers: [
+
+				],
 				position: ""
 
-			};
+			}
+
 		},
 		methods: {
-			// 获取位置
+			// 获取当前定位
 			getLocationInfo() {
-				uni.getLocation({
-					type: 'wgs84',
-					success: function(res) {
-						console.log("longitude: " + res.longitude);
-						console.log("latitude: ")
-					}
+				return new Promise((resolve) => {
+					let location = {
+						longitude: 0,
+						latitude: 0,
+						province: "",
+						city: "",
+						area: "",
+						street: "",
+						address: "",
+					};
+					uni.getLocation({
+						type: "gcj02",
+						success(res) {
+							location.longitude = res.longitude;
+							location.latitude = res.latitude;
+							const qqmapsdk = new QQMapWX({
+								key: "5CIBZ-M47NX-WBZ4E-ZYX5R-QCBOK-DIFQ4"
+							});
+							qqmapsdk.reverseGeocoder({
+								location,
+								success(response) {
+									let info = response.result;
+									location.province = info.address_component.province;
+									location.city = info.address_component.city;
+									location.area = info.address_component.district;
+									location.street = info.address_component.street;
+									location.address = info.address;
+									resolve(location);
 
+								}
+							})
+						},
+						fail(err) {
+							console.log(err);
+							resolve(location);
+						}
+					})
+				})
+			},
+
+			// 点击地图时移动
+			moveToLocation(obj) {
+				const qqmapsdk = new QQMapWX({
+					key: "5CIBZ-M47NX-WBZ4E-ZYX5R-QCBOK-DIFQ4"
+				});
+				qqmapsdk.reverseGeocoder({
+					address: obj,
+					success: (res) => {
+						console.log(res)
+						var res = res.result;
+						var latitude = res.location.lat;
+						var longitude = res.location.lng;
+						uni.createMapContext("kaCoin", this).moveToLocation({
+							latitude: latitude,
+							longitude: longitude,
+							success: (res) => {
+								console.log(res)
+								console.log(latitude)
+								console.log(longitude)
+								setTimeout(_ => {
+									this.covers = [{
+										address: "demo",
+										id: 2,
+										latitude: latitude,
+										longitude: longitude,
+										width: 30,
+										height: 30,
+										iconPath: "../../static/icon/kaCoin-map/location.png"
+									}]
+								}, 50)
+							},
+							fail: (res) => {
+								uni.showModal({
+									content: "位置调用失败",
+									showCancel: false
+
+								})
+							}
+						});
+
+					}
 				})
 			}
 
-			// 移动位置
-			moveTolocation(obj) {
-
-			}
 		},
-		async onLocad() {
+		async onLoad() {
 			const location = await this.getLocationInfo();
-			this.position = location.address;
-
-		}
-
+			this.position = location.address
+		},
 	}
 </script>
-
 <style scoped lang="scss">
 	.map_top {
 		height: 200rpx;

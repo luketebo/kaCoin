@@ -4,12 +4,12 @@ const __vite_glob_0_0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.def
   __proto__: null,
   default: food
 }, Symbol.toStringTag, { value: "Module" }));
-const __$7 = "/static/image/index/休闲.png";
+const medical = "/static/image/index/medical.png";
 const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: __$7
+  default: medical
 }, Symbol.toStringTag, { value: "Module" }));
-const __$6 = "/static/image/index/医疗.png";
+const __$6 = "/static/image/index/休闲.png";
 const __vite_glob_0_2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: __$6

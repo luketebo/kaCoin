@@ -10,7 +10,7 @@
 				</view>
 				<view class="bottom">
 					<view class="pic">
-						<image src="../../static/image/index/医疗.png"></image>
+						<image src="../../static/image/index/medical.png"></image>
 					</view>
 					<text>医疗/口腔</text>
 				</view>
@@ -84,7 +84,7 @@
 </script>
 <style lang='scss' scoped>
 	.swiperBar {
-		height: 220rpx;
+		height: 225rpx;
 		padding-bottom: 25rpx;
 		margin: 0rpx 15rpx;
 
@@ -138,7 +138,7 @@
 					align-items: center;
 
 					.pic {
-						height: 60rpx;
+						height: 55rpx;
 						width: 55rpx;
 
 						image {

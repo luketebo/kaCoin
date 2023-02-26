@@ -69,20 +69,7 @@ const _sfc_main = {
             latitude,
             longitude,
             success: (res2) => {
-              console.log(res2);
-              console.log(latitude);
-              console.log(longitude);
-              setTimeout((_) => {
-                this.covers = [{
-                  address: "demo",
-                  id: 2,
-                  latitude,
-                  longitude,
-                  width: 30,
-                  height: 30,
-                  iconPath: "../../static/icon/kaCoin-map/location.png"
-                }];
-              }, 50);
+              console.log("位置调用成功");
             },
             fail: (res2) => {
               common_vendor.index.showModal({
@@ -93,11 +80,54 @@ const _sfc_main = {
           });
         }
       });
+    },
+    // 处理搜索
+    searchLocation(res) {
+      const qqmapsdk = new libs_qqmapWxJssdk.QQMapWX({
+        key: "5CIBZ-M47NX-WBZ4E-ZYX5R-QCBOK-DIFQ4"
+      });
+      const location = this.getLocationInfo();
+      qqmapsdk.search({
+        keyword: res,
+        location: (location.latitude, location.longitude),
+        success: (res2) => {
+          console.log(res2);
+          var cvs = [];
+          for (var i = 0; i < res2.data.length; i++) {
+            cvs.push({
+              title: res2.data[i].title,
+              id: parseInt(res2.data[i].id),
+              latitude: res2.data[i].location.lat,
+              longitude: res2.data[i].location.lng,
+              iconPath: "../../static/icon/kaCoin-map/location.png",
+              width: 40,
+              height: 40,
+              label: {
+                content: res2.data[i].title,
+                color: "#ffffff",
+                textAlign: "center",
+                borderColor: "#fe5d2a",
+                borderWidth: 3,
+                borderRadius: 10,
+                bgColor: "#fe5d2a"
+              }
+            });
+          }
+          this.covers = cvs;
+        },
+        fail: (res2) => {
+          console.log(res2);
+        },
+        complete: (res2) => {
+          console.log(res2);
+        }
+      });
     }
   },
   async onLoad() {
     const location = await this.getLocationInfo();
     this.position = location.address;
+    this.moveToLocation(this.position);
   }
 };
 if (!Array) {
@@ -110,14 +140,14 @@ if (!Math) {
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.p({
+    a: common_vendor.o($options.searchLocation),
+    b: common_vendor.p({
       placeholder: "日照香炉生紫烟",
       ["show-action"]: false,
       ["input-align"]: "center",
       clearabled: true,
       shape: "square"
     }),
-    b: common_vendor.t($data.position),
     c: common_vendor.o(($event) => $options.moveToLocation($data.position)),
     d: $data.latitude,
     e: $data.longitude,

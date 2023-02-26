@@ -28,7 +28,7 @@
 				</view>
 				<view class="bottom">
 					<view class="pic">
-						<image src="../../static/image/index/医疗.png"></image>
+						<image src="../../static/image/index/medical.png"></image>
 					</view>
 					<text>医疗/口腔</text>
 				</view>

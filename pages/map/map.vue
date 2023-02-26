@@ -1,20 +1,17 @@
 <template>
 	<view>
 		<map id="kaCoin" style="width: 750rpx; height: 100vh;" :latitude="latitude" :longitude="longitude"
-			:markers="covers" show-location="">
+			:markers="covers" :show-location="true">
 			<view class="map_top">
 				<view class="map_search">
 					<u-search placeholder="日照香炉生紫烟" :show-action="false" input-align="center" :clearabled="true"
-						shape="square">
+						@search="searchLocation" shape="square">
 					</u-search>
 				</view>
 				<view class="map_elect">
 					<view class="map_distance">距离/区域</view>
 					<view class="map_condition">更多筛选</view>
 				</view>
-			</view>
-			<view style="margin-top: 40rpx; margin-left: 16rpx; color: red; border: 3rpx red solid;">
-				当前定位： {{ position }}
 			</view>
 			<view class="map_location" @click="moveToLocation(position)">
 				<image src="../../static/icon/kaCoin-map/click-location.png"></image>
@@ -71,7 +68,6 @@
 									location.street = info.address_component.street;
 									location.address = info.address;
 									resolve(location);
-
 								}
 							})
 						},
@@ -99,20 +95,7 @@
 							latitude: latitude,
 							longitude: longitude,
 							success: (res) => {
-								console.log(res)
-								console.log(latitude)
-								console.log(longitude)
-								setTimeout(_ => {
-									this.covers = [{
-										address: "demo",
-										id: 2,
-										latitude: latitude,
-										longitude: longitude,
-										width: 30,
-										height: 30,
-										iconPath: "../../static/icon/kaCoin-map/location.png"
-									}]
-								}, 50)
+								console.log("位置调用成功")
 							},
 							fail: (res) => {
 								uni.showModal({
@@ -122,15 +105,59 @@
 								})
 							}
 						});
-
 					}
 				})
-			}
+			},
+			// 处理搜索
+			searchLocation(res) {
+				const qqmapsdk = new QQMapWX({
+					key: "5CIBZ-M47NX-WBZ4E-ZYX5R-QCBOK-DIFQ4"
+				});
+				const location = this.getLocationInfo()
+				qqmapsdk.search({
+					keyword: res,
+					location: (location.latitude, location.longitude),
+					success: res => {
+						console.log(res)
+						var cvs = [];
+						for (var i = 0; i < res.data.length; i++) {
+							cvs.push({
+								title: res.data[i].title,
+								id: parseInt(res.data[i].id),
+								latitude: res.data[i].location.lat,
+								longitude: res.data[i].location.lng,
+								iconPath: "../../static/icon/kaCoin-map/location.png",
+								width: 40,
+								height: 40,
+								label: {
+									content: res.data[i].title,
+									color: "#ffffff",
+									textAlign: 'center',
+									borderColor: "#fe5d2a",
+									borderWidth: 3,
+									borderRadius: 10,
+									bgColor: "#fe5d2a"
+								}
+							})
+						}
+						this.covers = cvs
+					},
+					fail: (res) => {
+						console.log(res)
+					},
+					complete: (res) => {
+						console.log(res);
+					}
+
+				})
+			},
+
 
 		},
 		async onLoad() {
 			const location = await this.getLocationInfo();
-			this.position = location.address
+			this.position = location.address;
+			this.moveToLocation(this.position);
 		},
 	}
 </script>

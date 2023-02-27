@@ -1,7 +1,7 @@
 <template>
 	<view class="topCard">
 		<view class="top">
-			<view class="first">
+			<view class="first" @click="toDetail()">
 				<view class="pic">
 					<image src="../../static/image/demo.jpg" mode="aspectFill"></image>
 				</view>
@@ -17,13 +17,12 @@
 				</view>
 			</view>
 		</view>
-		<view class="center">
+		<view class="center" @click="tomoreDetail()">
 			<view class="item" v-for="item in 4">
 				<view class="topCenter">
 					<view class="picImg">
 						<image src="../../static/image/index/food.png" mode="aspectFill"></image>
 					</view>
-
 					<text>美食</text>
 				</view>
 				<view class="bottom">
@@ -51,7 +50,17 @@
 			number: 1000,
 			text: "热力值"
 		}
-	]
+	];
+	const tomoreDetail = () => {
+		uni.navigateTo({
+			url: "/pages/detail/moreDetail"
+		})
+	}
+	const toDetail = () => {
+		uni.navigateTo({
+			url: "/pages/detail/detail"
+		})
+	}
 </script>
 
 <style lang="scss" scoped>

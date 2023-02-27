@@ -1,5 +1,5 @@
 <template>
-	<view class="swiperBar">
+	<view class="swiperBar" @click="tomoreDetail()">
 		<scroll-view scroll-x="true" class="scrollBar">
 			<view class="item" v-for="item in 20">
 				<view class="top">
@@ -81,6 +81,14 @@
 		console.log(modules[path].default)
 		return modules[path]
 	})
+	const tomoreDetail = () => {
+		uni.navigateTo({
+			url: "/pages/detail/moreDetail",
+			success: res => {},
+			fail: () => {},
+			complete: () => {}
+		});
+	}
 </script>
 <style lang='scss' scoped>
 	.swiperBar {

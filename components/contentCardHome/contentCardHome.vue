@@ -1,12 +1,11 @@
 <template>
 	<view class="contentCardHome">
-		<view class="homeCard">
+		<view class="homeCard" @click="tomoreDetail()">
 			<view class="item" v-for="item in 4">
 				<view class="topCenter">
 					<view class="picImg">
 						<image src="../../static/image/index/food.png" mode="aspectFill"></image>
 					</view>
-
 					<text>美食</text>
 				</view>
 				<view class="bottom">
@@ -27,6 +26,13 @@
 			return {
 
 			};
+		},
+		methods: {
+			tomoreDetail() {
+				uni.navigateTo({
+					url: "/pages/detail/moreDetail"
+				})
+			}
 		}
 	}
 </script>

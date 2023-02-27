@@ -23,6 +23,9 @@
 			return {
 
 			};
+		},
+		methods: {
+
 		}
 	}
 </script>

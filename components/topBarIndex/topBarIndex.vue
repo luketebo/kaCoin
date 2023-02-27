@@ -10,6 +10,7 @@
 			</image>
 			<u-toast ref="uToast"></u-toast>
 		</view>
+		<u-toast ref="uToast" />
 	</view>
 </template>
 <script>
@@ -61,19 +62,20 @@
 					})
 				})
 			},
-			showToast() {
-				uni.showToast({
-					title: "+10",
-					duration: 2000
+			showToast(te, tp) {
+				this.$refs.uToast.show({
+					title: te,
+					type: tp,
 				})
 			},
 			scanCode() {
 				uni.scanCode({
 					// 将数据处理成为json格式，方便后续处理
 					success: (res) => {
-						console.log(res.result)
 						var obj = JSON.parse(res.result)
 						const location = this.getLocationInfo()
+						console.log(location)
+						const _this = this;
 						location.then(function(data) {
 							const qqmapsdk = new QQMapWX({
 								key: "5CIBZ-M47NX-WBZ4E-ZYX5R-QCBOK-DIFQ4"
@@ -82,24 +84,35 @@
 								mode: "",
 								// 起始位置
 								from: {
-									latitude: location.latitude,
-									longitude: location.longitude
+									latitude: data.latitude,
+									longitude: data.longitude
 								},
-								// 终端
-								to: {
+								// 终点
+								to: [{
 									latitude: obj.latitude,
 									longitude: obj.longitude
-								},
+								}],
 								success(res, data) {
-									console.log(res)
-									console.log(data)
+									let dis = res.result.elements;
+									for (let i = 0; i < res.result.elements.length; i++) {
+										console.log(dis[i].distance)
+										// 设置五百米范围
+										if (500 > dis[i].distance) {
+											let coin = "+" + obj.kaCoin;
+											_this.showToast(coin, 'success')
+										} else {
+											_this.showToast('出错啦！请重试', 'error')
+										}
+									}
+
+								},
+								fail(err) {
+									console.log(err)
+
 								}
 							})
 
 						})
-
-
-						this.showToast()
 					}
 				})
 			}
@@ -154,15 +167,19 @@
 		margin: 0rpx 35rpx;
 
 		.left {
+			width: 120rpx;
 			font-weight: bold;
 			/* margin-left: 35rpx; */
 		}
 
-		.center {}
+		.center {
+			width: 450rpx;
+		}
 
 		.right {
 			height: 50rpx;
 			width: 50rpx;
+			margin-left: 25rpx;
 			/* margin-right: 55rpx; */
 
 			image {

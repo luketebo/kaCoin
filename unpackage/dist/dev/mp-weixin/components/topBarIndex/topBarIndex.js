@@ -58,19 +58,20 @@ const __default__ = {
         });
       });
     },
-    showToast() {
-      common_vendor.index.showToast({
-        title: "+10",
-        duration: 2e3
+    showToast(te, tp) {
+      this.$refs.uToast.show({
+        title: te,
+        type: tp
       });
     },
     scanCode() {
       common_vendor.index.scanCode({
         // 将数据处理成为json格式，方便后续处理
         success: (res) => {
-          console.log(res.result);
           var obj = JSON.parse(res.result);
           const location = this.getLocationInfo();
+          console.log(location);
+          const _this = this;
           location.then(function(data) {
             const qqmapsdk = new libs_qqmapWxJssdk.QQMapWX({
               key: "5CIBZ-M47NX-WBZ4E-ZYX5R-QCBOK-DIFQ4"
@@ -79,21 +80,31 @@ const __default__ = {
               mode: "",
               // 起始位置
               from: {
-                latitude: location.latitude,
-                longitude: location.longitude
+                latitude: data.latitude,
+                longitude: data.longitude
               },
-              // 终端
-              to: {
+              // 终点
+              to: [{
                 latitude: obj.latitude,
                 longitude: obj.longitude
-              },
+              }],
               success(res2, data2) {
-                console.log(res2);
-                console.log(data2);
+                let dis = res2.result.elements;
+                for (let i = 0; i < res2.result.elements.length; i++) {
+                  console.log(dis[i].distance);
+                  if (500 > dis[i].distance) {
+                    let coin = "+" + obj.kaCoin;
+                    _this.showToast(coin, "success");
+                  } else {
+                    _this.showToast("出错啦！请重试", "error");
+                  }
+                }
+              },
+              fail(err) {
+                console.log(err);
               }
             });
           });
-          this.showToast();
         }
       });
     }
@@ -118,7 +129,8 @@ const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
           shape: "square"
         }),
         c: common_vendor.o((...args) => _ctx.scanCode && _ctx.scanCode(...args)),
-        d: common_vendor.sr("uToast", "7f451f83-1")
+        d: common_vendor.sr("uToast", "7f451f83-1"),
+        e: common_vendor.sr("uToast", "7f451f83-2")
       };
     };
   }

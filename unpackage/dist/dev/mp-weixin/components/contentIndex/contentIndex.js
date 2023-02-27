@@ -10,6 +10,11 @@ const _sfc_main = {
       likes.value = !likes.value;
       likeNum.value++;
     };
+    const toPostDetail = () => {
+      common_vendor.index.navigateTo({
+        url: "/pages/detail/postDetail"
+      });
+    };
     return (_ctx, _cache) => {
       return common_vendor.e({
         a: common_assets._imports_0,
@@ -21,7 +26,8 @@ const _sfc_main = {
         e: common_assets._imports_3
       }, {
         f: common_vendor.t(common_vendor.unref(likeNum)),
-        g: common_vendor.o(onClickLike)
+        g: common_vendor.o(onClickLike),
+        h: common_vendor.o(($event) => toPostDetail())
       });
     };
   }

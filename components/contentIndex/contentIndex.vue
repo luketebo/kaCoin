@@ -1,5 +1,5 @@
 <template>
-	<view class="card">
+	<view class="card" @click="toPostDetail()">
 		<view class="top">
 			<image src="@/static/image/paigu.jpg" mode="aspectFill"></image>
 		</view>
@@ -32,6 +32,11 @@
 	const onClickLike = () => {
 		likes.value = !likes.value
 		likeNum.value++
+	}
+	const toPostDetail = () => {
+		uni.navigateTo({
+			url: "/pages/detail/postDetail"
+		})
 	}
 </script>
 

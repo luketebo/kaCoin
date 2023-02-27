@@ -96,6 +96,9 @@
 		}
 
 		&-btn {
+			position: fixed;
+			left: 0rpx;
+			bottom: 0rpx;
 			align-self: flex-end;
 			// background-color: black;
 			width: 100%;

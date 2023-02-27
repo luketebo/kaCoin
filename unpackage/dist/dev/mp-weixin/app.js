@@ -33,6 +33,9 @@ if (!Math) {
   "./pages/map/map.js";
   "./pages/start/start.js";
   "./pages/submit/submit.js";
+  "./pages/detail/detail.js";
+  "./pages/detail/postDetail.js";
+  "./pages/detail/moreDetail.js";
 }
 const _sfc_main = {
   onLaunch: function() {

@@ -34,12 +34,17 @@
   margin: 0rpx 35rpx;
 }
 .topBar .left.data-v-7f451f83 {
+  width: 120rpx;
   font-weight: bold;
   /* margin-left: 35rpx; */
+}
+.topBar .center.data-v-7f451f83 {
+  width: 450rpx;
 }
 .topBar .right.data-v-7f451f83 {
   height: 50rpx;
   width: 50rpx;
+  margin-left: 25rpx;
   /* margin-right: 55rpx; */
 }
 .topBar .right image.data-v-7f451f83 {

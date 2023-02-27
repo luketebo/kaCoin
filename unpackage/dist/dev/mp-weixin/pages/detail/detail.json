@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "设置",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-avatar": "../../uni_modules/vk-uview-ui/components/u-avatar/u-avatar",
+    "u-line": "../../uni_modules/vk-uview-ui/components/u-line/u-line",
+    "u-button": "../../uni_modules/vk-uview-ui/components/u-button/u-button"
+  }
+}

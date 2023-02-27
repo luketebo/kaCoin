@@ -4,7 +4,10 @@
     "pages/home/home",
     "pages/map/map",
     "pages/start/start",
-    "pages/submit/submit"
+    "pages/submit/submit",
+    "pages/detail/detail",
+    "pages/detail/postDetail",
+    "pages/detail/moreDetail"
   ],
   "window": {
     "navigationBarTextStyle": "black",

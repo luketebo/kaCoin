@@ -1,6 +1,6 @@
 "use strict";
-const common_assets = require("../../common/assets.js");
 const common_vendor = require("../../common/vendor.js");
+const common_assets = require("../../common/assets.js");
 const _sfc_main = {
   __name: "swiperBarIndex",
   setup(__props) {
@@ -10,11 +10,23 @@ const _sfc_main = {
       console.log(modules[path].default);
       return modules[path];
     });
+    const tomoreDetail = () => {
+      common_vendor.index.navigateTo({
+        url: "/pages/detail/moreDetail",
+        success: (res) => {
+        },
+        fail: () => {
+        },
+        complete: () => {
+        }
+      });
+    };
     return (_ctx, _cache) => {
       return {
         a: common_vendor.f(20, (item, k0, i0) => {
           return {};
-        })
+        }),
+        b: common_vendor.o(($event) => tomoreDetail())
       };
     };
   }

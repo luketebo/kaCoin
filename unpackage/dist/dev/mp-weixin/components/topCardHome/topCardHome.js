@@ -17,17 +17,29 @@ const _sfc_main = {
         text: "热力值"
       }
     ];
+    const tomoreDetail = () => {
+      common_vendor.index.navigateTo({
+        url: "/pages/detail/moreDetail"
+      });
+    };
+    const toDetail = () => {
+      common_vendor.index.navigateTo({
+        url: "/pages/detail/detail"
+      });
+    };
     return (_ctx, _cache) => {
       return {
-        a: common_vendor.f(itemArr, (item, index, i0) => {
+        a: common_vendor.o(($event) => toDetail()),
+        b: common_vendor.f(itemArr, (item, index, i0) => {
           return {
             a: common_vendor.t(item.number),
             b: common_vendor.t(item.text)
           };
         }),
-        b: common_vendor.f(4, (item, k0, i0) => {
+        c: common_vendor.f(4, (item, k0, i0) => {
           return {};
-        })
+        }),
+        d: common_vendor.o(($event) => tomoreDetail())
       };
     };
   }

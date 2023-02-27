@@ -3,7 +3,8 @@ const common_vendor = require("../../common/vendor.js");
 const _sfc_main = {
   data() {
     return {};
-  }
+  },
+  methods: {}
 };
 if (!Array) {
   const _easycom_topCardHome2 = common_vendor.resolveComponent("topCardHome");

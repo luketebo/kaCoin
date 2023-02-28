@@ -7,7 +7,8 @@
     "pages/submit/submit",
     "pages/detail/detail",
     "pages/detail/postDetail",
-    "pages/detail/moreDetail"
+    "pages/detail/moreDetail",
+    "pages/detail/kaCoinDetail"
   ],
   "window": {
     "navigationBarTextStyle": "black",

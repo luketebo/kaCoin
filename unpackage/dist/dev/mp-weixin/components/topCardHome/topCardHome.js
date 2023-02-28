@@ -27,6 +27,11 @@ const _sfc_main = {
         url: "/pages/detail/detail"
       });
     };
+    const tokaCoinDetail = () => {
+      common_vendor.index.navigateTo({
+        url: "/pages/detail/kaCoinDetail"
+      });
+    };
     return (_ctx, _cache) => {
       return {
         a: common_vendor.o(($event) => toDetail()),
@@ -36,10 +41,11 @@ const _sfc_main = {
             b: common_vendor.t(item.text)
           };
         }),
-        c: common_vendor.f(4, (item, k0, i0) => {
+        c: common_vendor.o(($event) => tokaCoinDetail()),
+        d: common_vendor.f(4, (item, k0, i0) => {
           return {};
         }),
-        d: common_vendor.o(($event) => tomoreDetail())
+        e: common_vendor.o(($event) => tomoreDetail())
       };
     };
   }

@@ -1,6 +1,6 @@
 <template>
-	<view class="card" @click="toPostDetail()">
-		<view class="top">
+	<view class="card">
+		<view class="top" @click="toPostDetail()">
 			<image src="@/static/image/paigu.jpg" mode="aspectFill"></image>
 		</view>
 		<text class="center">很美味，很好恰</text>
@@ -26,12 +26,16 @@
 	import {
 		ref
 	} from 'vue'
-	let likes = ref(true)
+	let likes = ref(false)
 	let likeNum = ref(1)
 
 	const onClickLike = () => {
 		likes.value = !likes.value
-		likeNum.value++
+		if (likes.value) {
+			likeNum.value++;
+		} else {
+			likeNum.value--;
+		}
 	}
 	const toPostDetail = () => {
 		uni.navigateTo({

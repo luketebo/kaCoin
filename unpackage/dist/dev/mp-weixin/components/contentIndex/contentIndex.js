@@ -4,11 +4,15 @@ const common_assets = require("../../common/assets.js");
 const _sfc_main = {
   __name: "contentIndex",
   setup(__props) {
-    let likes = common_vendor.ref(true);
+    let likes = common_vendor.ref(false);
     let likeNum = common_vendor.ref(1);
     const onClickLike = () => {
       likes.value = !likes.value;
-      likeNum.value++;
+      if (likes.value) {
+        likeNum.value++;
+      } else {
+        likeNum.value--;
+      }
     };
     const toPostDetail = () => {
       common_vendor.index.navigateTo({
@@ -18,16 +22,16 @@ const _sfc_main = {
     return (_ctx, _cache) => {
       return common_vendor.e({
         a: common_assets._imports_0,
-        b: common_assets._imports_1,
-        c: !common_vendor.unref(likes)
+        b: common_vendor.o(($event) => toPostDetail()),
+        c: common_assets._imports_1,
+        d: !common_vendor.unref(likes)
       }, !common_vendor.unref(likes) ? {
-        d: common_assets._imports_2
+        e: common_assets._imports_2
       } : {
-        e: common_assets._imports_3
+        f: common_assets._imports_3
       }, {
-        f: common_vendor.t(common_vendor.unref(likeNum)),
-        g: common_vendor.o(onClickLike),
-        h: common_vendor.o(($event) => toPostDetail())
+        g: common_vendor.t(common_vendor.unref(likeNum)),
+        h: common_vendor.o(onClickLike)
       });
     };
   }

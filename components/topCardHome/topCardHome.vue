@@ -10,7 +10,7 @@
 					<text>犹豫就会败北</text>
 				</view>
 			</view>
-			<view class="second">
+			<view class="second" @click="tokaCoinDetail()">
 				<view class="item" v-for="(item, index) in itemArr">
 					<view class="number">{{item.number}}</view>
 					<view class="text">{{item.text}}</view>
@@ -59,6 +59,11 @@
 	const toDetail = () => {
 		uni.navigateTo({
 			url: "/pages/detail/detail"
+		})
+	}
+	const tokaCoinDetail = () => {
+		uni.navigateTo({
+			url: "/pages/detail/kaCoinDetail"
 		})
 	}
 </script>

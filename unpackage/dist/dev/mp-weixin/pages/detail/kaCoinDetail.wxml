@@ -1,0 +1,1 @@
+<view class="data-v-5cbb299a"><map class="data-v-5cbb299a" id="kaCoinDetail" style="width:750rpx;height:100vh" latitude="{{a}}" longitude="{{b}}" markers="{{c}}" show-location="{{true}}"><view class="kaCoinDetailTop data-v-5cbb299a"><view class="kaCoinDetailTopLeft data-v-5cbb299a">KaCoin</view><view class="kaCoinDetailTopRight data-v-5cbb299a">100</view></view></map></view>

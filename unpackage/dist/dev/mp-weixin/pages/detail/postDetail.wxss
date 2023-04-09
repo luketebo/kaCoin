@@ -24,39 +24,66 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.newsDetail.data-v-766bc1e6 {
-  padding: 25rpx;
+.newsDetail .newDetailContent.data-v-766bc1e6 {
+  padding: 15rpx 35rpx 100rpx 35rpx;
 }
-.newsDetail .NDimg.data-v-766bc1e6 {
-  height: 200rpx;
+.newsDetail .newDetailContent .newDetailContentPose.data-v-766bc1e6 {
+  margin-top: 10rpx;
+  font-size: 35rpx;
+  line-height: 1.8;
+  font-weight: "Semi bold";
 }
-.newsDetail .NDimg image.data-v-766bc1e6 {
-  width: 100%;
-  height: 100%;
-}
-.newsDetail .title.data-v-766bc1e6 {
-  font-size: 40rpx;
-  color: #333;
-}
-.newsDetail .info.data-v-766bc1e6 {
+.newsDetail .newDetailBottom.data-v-766bc1e6 {
+  background-color: #fff;
+  height: 80rpx;
   display: flex;
   flex-direction: row;
-  padding: 20rpx;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
   justify-content: space-between;
-  font-size: 25rpx;
-  background-color: #F6F6F6;
-  margin: 40rpx 0;
+  align-items: center;
 }
-.newsDetail .content.data-v-766bc1e6 {
-  padding-bottom: 50rpx;
+.newsDetail .newDetailBottom .newDetailBottomInput.data-v-766bc1e6 {
+  width: 40%;
 }
-.newsDetail .content image.data-v-766bc1e6 {
-  max-width: 100%;
+.newsDetail .newDetailBottom .newDetailBottomLike.data-v-766bc1e6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.newsDetail .bottom.data-v-766bc1e6 {
-  background: #FEF0F0;
-  color: #F89898;
-  font-size: 26rpx;
-  padding: 20rpx;
-  line-height: 1.8em;
+.newsDetail .newDetailBottom .newDetailBottomLike .newDetailBottomLikeIcon.data-v-766bc1e6 {
+  height: 40rpx;
+  width: 40rpx;
+}
+.newsDetail .newDetailBottom .newDetailBottomLike .newDetailBottomLikeIcon image.data-v-766bc1e6 {
+  height: 100%;
+  width: 100%;
+}
+.newsDetail .newDetailBottom .newDetailBottomStar.data-v-766bc1e6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsDetail .newDetailBottom .newDetailBottomStar .newDetailBottomStarIcon.data-v-766bc1e6 {
+  height: 40rpx;
+  width: 40rpx;
+}
+.newsDetail .newDetailBottom .newDetailBottomStar .newDetailBottomStarIcon image.data-v-766bc1e6 {
+  height: 100%;
+  width: 100%;
+}
+.newsDetail .newDetailBottom .newDetailBottomMessage.data-v-766bc1e6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsDetail .newDetailBottom .newDetailBottomMessage .newDetailBottomMessageIcon.data-v-766bc1e6 {
+  height: 40rpx;
+  width: 40rpx;
+}
+.newsDetail .newDetailBottom .newDetailBottomMessage .newDetailBottomMessageIcon image.data-v-766bc1e6 {
+  height: 100%;
+  width: 100%;
 }

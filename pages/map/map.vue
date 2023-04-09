@@ -4,8 +4,8 @@
 			:markers="covers" :show-location="true">
 			<view class="map_top">
 				<view class="map_search">
-					<u-search placeholder="日照香炉生紫烟" :show-action="false" input-align="center" :clearabled="true"
-						@search="searchLocation" shape="square">
+					<u-search @click="toSearch()" placeholder="日照香炉生紫烟" :disabled="true" :show-action="false"
+						input-align="center" :clearabled="true" @search="searchLocation" shape="square">
 					</u-search>
 				</view>
 				<view class="map_elect">
@@ -14,7 +14,7 @@
 				</view>
 			</view>
 			<view class="map_location" @click="moveToLocation(position)">
-				<image src="../../static/icon/kaCoin-map/click-location.png"></image>
+				<image src="../../static/icon/kaCoin-map/clicked-location.png"></image>
 			</view>
 			<view>上拉条</view>
 		</map>
@@ -38,6 +38,12 @@
 
 		},
 		methods: {
+			// 跳转搜索栏
+			toSearch() {
+				uni.navigateTo({
+					url: "/pages/search/search"
+				})
+			},
 			// 获取当前定位
 			getLocationInfo() {
 				return new Promise((resolve) => {

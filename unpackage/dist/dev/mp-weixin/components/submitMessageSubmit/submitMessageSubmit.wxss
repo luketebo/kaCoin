@@ -24,7 +24,6 @@
   width: 100%;
   display: flex;
   margin-top: 500rpx;
-  border: 1rxp solid red;
 }
 .submitMessage-btn-rought {
   display: inline-block;

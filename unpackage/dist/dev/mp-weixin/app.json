@@ -8,7 +8,9 @@
     "pages/detail/detail",
     "pages/detail/postDetail",
     "pages/detail/moreDetail",
-    "pages/detail/kaCoinDetail"
+    "pages/detail/kaCoinDetail",
+    "pages/search/search",
+    "pages/search/searchDetail/searchDetail"
   ],
   "window": {
     "navigationBarTextStyle": "black",

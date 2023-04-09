@@ -37,6 +37,8 @@ if (!Math) {
   "./pages/detail/postDetail.js";
   "./pages/detail/moreDetail.js";
   "./pages/detail/kaCoinDetail.js";
+  "./pages/search/search.js";
+  "./pages/search/searchDetail/searchDetail.js";
 }
 const _sfc_main = {
   onLaunch: function() {

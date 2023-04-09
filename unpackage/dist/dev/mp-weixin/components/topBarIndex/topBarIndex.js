@@ -18,6 +18,13 @@ const __default__ = {
     };
   },
   methods: {
+    // 跳转搜索页面
+    toSearch() {
+      console.log("click");
+      common_vendor.index.navigateTo({
+        url: "/pages/search/search"
+      });
+    },
     // 获取当前定位
     getLocationInfo() {
       return new Promise((resolve) => {
@@ -121,16 +128,18 @@ const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
     return (_ctx, _cache) => {
       return {
         a: common_vendor.t(_ctx.position),
-        b: common_vendor.p({
+        b: common_vendor.o(($event) => _ctx.toSearch()),
+        c: common_vendor.p({
           placeholder: "日照香炉生紫烟",
+          disabled: true,
           ["show-action"]: false,
           ["input-align"]: "center",
           clearabled: true,
           shape: "square"
         }),
-        c: common_vendor.o((...args) => _ctx.scanCode && _ctx.scanCode(...args)),
-        d: common_vendor.sr("uToast", "7f451f83-1"),
-        e: common_vendor.sr("uToast", "7f451f83-2")
+        d: common_vendor.o((...args) => _ctx.scanCode && _ctx.scanCode(...args)),
+        e: common_vendor.sr("uToast", "7f451f83-1"),
+        f: common_vendor.sr("uToast", "7f451f83-2")
       };
     };
   }

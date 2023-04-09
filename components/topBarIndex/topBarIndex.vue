@@ -2,7 +2,8 @@
 	<view class="topBar">
 		<view class="left">{{ position }}</view>
 		<view class="center">
-			<u-search placeholder="日照香炉生紫烟" :show-action="false" input-align="center" :clearabled="true" shape="square">
+			<u-search @click="toSearch()" placeholder="日照香炉生紫烟" :disabled="true" :show-action="false"
+				input-align="center" :clearabled="true" shape="square">
 			</u-search>
 		</view>
 		<view class="right">
@@ -22,6 +23,13 @@
 			}
 		},
 		methods: {
+			// 跳转搜索页面
+			toSearch() {
+				console.log("click")
+				uni.navigateTo({
+					url: "/pages/search/search"
+				})
+			},
 			// 获取当前定位
 			getLocationInfo() {
 				return new Promise((resolve) => {

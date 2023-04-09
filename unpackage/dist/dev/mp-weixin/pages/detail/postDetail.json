@@ -1,5 +1,10 @@
 {
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "usingComponents": {
+    "u-swiper": "../../uni_modules/vk-uview-ui/components/u-swiper/u-swiper",
+    "uni-title": "../../uni_modules/uni-title/components/uni-title/uni-title",
+    "u-parse": "../../uni_modules/vk-uview-ui/components/u-parse/u-parse",
+    "u-field": "../../uni_modules/vk-uview-ui/components/u-field/u-field"
+  }
 }

@@ -104,7 +104,6 @@
 			width: 100%;
 			display: flex;
 			margin-top: 500rpx;
-			border: 1rxp solid red;
 
 			&-rought {
 				display: inline-block;

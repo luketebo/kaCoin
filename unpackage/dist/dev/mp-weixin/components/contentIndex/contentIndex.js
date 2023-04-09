@@ -1,7 +1,19 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
 const common_assets = require("../../common/assets.js");
-const _sfc_main = {
+const __default__ = {
+  props: {
+    res: {
+      typeof: Number
+      // required: true
+    }
+  },
+  data() {
+    return {};
+  },
+  methods: {}
+};
+const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
   __name: "contentIndex",
   setup(__props) {
     let likes = common_vendor.ref(false);
@@ -35,6 +47,6 @@ const _sfc_main = {
       });
     };
   }
-};
+});
 const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/Code-repository/Hbuilder/kaCoin/components/contentIndex/contentIndex.vue"]]);
 wx.createComponent(Component);

@@ -3,7 +3,7 @@
 		<view class="top" @click="toPostDetail()">
 			<image src="@/static/image/paigu.jpg" mode="aspectFill"></image>
 		</view>
-		<text class="center">很美味，很好恰</text>
+		<text class="center">很美味，很好恰 </text>
 		<view class="bottom">
 			<view class="left">
 				<view class="avatar">
@@ -21,6 +21,25 @@
 		</view>
 	</view>
 </template>
+<script>
+	export default {
+		props: {
+			res: {
+				typeof: Number,
+				// required: true
+			}
+		},
+		data() {
+			return {
+
+			}
+		},
+		methods: {
+
+		}
+
+	}
+</script>
 
 <script setup>
 	import {

@@ -13,6 +13,12 @@ const _sfc_main = {
     };
   },
   methods: {
+    // 跳转搜索栏
+    toSearch() {
+      common_vendor.index.navigateTo({
+        url: "/pages/search/search"
+      });
+    },
     // 获取当前定位
     getLocationInfo() {
       return new Promise((resolve) => {
@@ -140,18 +146,20 @@ if (!Math) {
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.o($options.searchLocation),
-    b: common_vendor.p({
+    a: common_vendor.o(($event) => $options.toSearch()),
+    b: common_vendor.o($options.searchLocation),
+    c: common_vendor.p({
       placeholder: "日照香炉生紫烟",
+      disabled: true,
       ["show-action"]: false,
       ["input-align"]: "center",
       clearabled: true,
       shape: "square"
     }),
-    c: common_vendor.o(($event) => $options.moveToLocation($data.position)),
-    d: $data.latitude,
-    e: $data.longitude,
-    f: $data.covers
+    d: common_vendor.o(($event) => $options.moveToLocation($data.position)),
+    e: $data.latitude,
+    f: $data.longitude,
+    g: $data.covers
   };
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-e06b858f"], ["__file", "D:/Code-repository/Hbuilder/kaCoin/pages/map/map.vue"]]);

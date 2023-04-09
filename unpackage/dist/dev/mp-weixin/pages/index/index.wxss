@@ -24,8 +24,115 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.centerBar.data-v-1cf27b2a {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 23rpx 15rpx;
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--window-top);
+  left: 0rpx;
+  right: 0rpx;
+  z-index: 100;
+  background-color: white;
+}
+.centerBar .centerScroll.data-v-1cf27b2a {
+  height: inherit;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerBar .centerScroll.data-v-1cf27b2a ::-webkit-scrollbar {
+  width: 4px !important;
+  height: 1px !important;
+  overflow: auto !important;
+  background: transparent !important;
+  -webkit-appearance: auto !important;
+  display: block;
+}
+.centerBar .centerScroll .item.data-v-1cf27b2a {
+  display: inline-block;
+  height: 80rpx;
+  width: 100rpx;
+  font-weight: bold;
+  font-size: 25rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.centerBar .centerScroll .active.data-v-1cf27b2a {
+  -webkit-text-decoration: underline 9rpx;
+          text-decoration: underline 9rpx;
+  -webkit-text-decoration-color: #fe5d2a;
+          text-decoration-color: #fe5d2a;
+  font-size: 35rpx;
+}
 .contentCard.data-v-1cf27b2a {
   display: grid;
   grid-template-columns: auto auto;
   margin: 15rpx;
+}
+.contentCard .card.data-v-1cf27b2a {
+  margin: 5rpx;
+  height: 500rpx;
+  width: 350rpx;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15rpx;
+  justify-content: space-evenly;
+}
+.contentCard .card .top.data-v-1cf27b2a {
+  height: 350rpx;
+}
+.contentCard .card .top image.data-v-1cf27b2a {
+  border-radius: 10rpx 10rpx 0 0;
+  height: 100%;
+  width: 100%;
+}
+.contentCard .card .center.data-v-1cf27b2a {
+  height: 80rpx;
+  padding: 10rpx;
+  font-weight: bold;
+}
+.contentCard .card .bottom.data-v-1cf27b2a {
+  display: flex;
+  padding: 2rpx 10rpx;
+  justify-content: space-between;
+}
+.contentCard .card .bottom .left.data-v-1cf27b2a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentCard .card .bottom .left .avatar.data-v-1cf27b2a {
+  height: 50rpx;
+  width: 50rpx;
+}
+.contentCard .card .bottom .left .avatar image.data-v-1cf27b2a {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.contentCard .card .bottom .left .name.data-v-1cf27b2a {
+  padding-left: 25rpx;
+  color: #888;
+  font-size: 25rpx;
+}
+.contentCard .card .bottom .like.data-v-1cf27b2a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentCard .card .bottom .like .icon.data-v-1cf27b2a {
+  height: 40rpx;
+  width: 40rpx;
+}
+.contentCard .card .bottom .like .icon image.data-v-1cf27b2a {
+  height: 100%;
+  width: 100%;
+}
+.contentCard .card .bottom .like .number.data-v-1cf27b2a {
+  font-size: #888;
+  padding-left: 5rpx;
+  padding-top: 8rpx;
 }
